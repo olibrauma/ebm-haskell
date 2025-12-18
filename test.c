@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
 #endif
@@ -33,7 +32,25 @@ void Tsub_af_ai(double P_air, double *Tsub, double *a_f, double *a_i);
 void calc_dif_s(double day, double T[], double T_s[], double P_air,
                 double dif_s[]);
 
-int main(void) {
+void dump_state(const char *dir, const char *filename, int loop, double season,
+                double P_air, double P_ice, double P_rego, double T_sub,
+                double T[], double M[], double T_posi[], double M_posi[],
+                double T_nega[], double M_nega[]) {
+  char path[256];
+  sprintf(path, "%s/%s", dir, filename);
+  FILE *f = fopen(path, "w");
+  if (!f)
+    return;
+  fprintf(f, "loop:%d,season:%g,P_air:%g,P_ice:%g,P_rego:%g,T_sub:%g\n", loop,
+          season, P_air, P_ice, P_rego, T_sub);
+  for (int i = 0; i < 181; i++) {
+    fprintf(f, "%d,%.16g,%.16g,%.16g,%.16g,%.16g,%.16g\n", i, T[i], M[i],
+            T_posi[i], M_posi[i], T_nega[i], M_nega[i]);
+  }
+  fclose(f);
+}
+
+int main(int argc, char *argv[]) {
   int reso = 181, n, loop = 0;
   double T[reso], M[reso], T_sub = 0.0, bug = 0.0;
   double ins[reso], dif[reso], radi[reso];
@@ -75,8 +92,19 @@ int main(void) {
   calc_Yearsec(&Year_sec);
   /******************ここまでが初期条件と変数の定義********************************/
 
+  if (argc > 3) {
+    P_total = atof(argv[1]);
+    obl = atof(argv[2]) * M_PI / 180.0;
+    alpha_posi = atof(argv[3]) * M_PI / 180.0;
+    alpha_nega = -1.0 * alpha_posi;
+  }
+  const char *out_dir = (argc > 4) ? argv[4] : ".";
+
   heikou(obl, dt, alpha_posi, P_total, &P_air, &P_ice, &P_rego, T, M, &season,
          &bug, &loop, T_posi, M_posi, T_nega, M_nega);
+
+  dump_state(out_dir, "dump_000.dat", loop, season, P_air, P_ice, P_rego, T_sub,
+             T, M, T_posi, M_posi, T_nega, M_nega);
   day_heikou = (season - fmod(season, day_sec)) / day_sec;
 
   if (bug == 0.0) {
@@ -104,6 +132,14 @@ int main(void) {
       calc_dif_s(day, T, T_nega, P_air, dif_nega);
       calc_Ts_Ms(P_air, T_nega, M_nega, ins_nega, radi_nega, dif_posi, dt);
       season = season + dt;
+
+      static int step_count = 0;
+      char fname[64];
+      sprintf(fname, "dump_%03d.dat", ++step_count);
+      dump_state(out_dir, fname, loop, season, P_air, P_ice, P_rego, T_sub, T,
+                 M, T_posi, M_posi, T_nega, M_nega);
+      if (step_count >= 10)
+        break;
 
       // 毎日の日射量を記録
       if (preseason > season - day_sec) {
@@ -406,7 +442,9 @@ void heikou(double obl, double dt, double angle, double P_total,
     abs_posi = 0.0;
     abs_nega = 0.0;
     fprintf(stderr, "The %d th loop begins.\n", loop);
+    int heikou_step_limit = 0;
     do {
+      heikou_step_limit++;
       calc_ins(season, obl, ins);
       calc_dif(day, T, P_air, dif);
       calc_radi(season, T, P_air, radi);
@@ -426,7 +464,11 @@ void heikou(double obl, double dt, double angle, double P_total,
       calc_dif_s(day, T, T_posi, P_air, dif_nega);
       calc_Ts_Ms(P_air, T_nega, M_nega, ins_nega, radi_nega, dif_nega, dt);
       season += dt;
+      if (heikou_step_limit >= 10)
+        break;
     } while (season < Year_sec * (loop + 1) && bug == 0);
+    if (heikou_step_limit >= 10)
+      break;
 
     for (n = 0; n < reso; n++) {
       abs += pow(T_last[n] - T[n], 2.0);
@@ -442,7 +484,7 @@ void heikou(double obl, double dt, double angle, double P_total,
     loop += 1;
     if (abs < 1.0 && abs_posi < 1.0 && abs_nega < 1.0)
       loop_end = 1.0;
-  } while (loop_end == 0.0 && loop < 100 && bug == 0);
+  } while (loop_end == 0.0 && loop < 1 && bug == 0);
   day = (season - fmod(season, day_sec)) / day_sec;
 
   // output//

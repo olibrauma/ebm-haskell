@@ -1,0 +1,2 @@
+takeru    213314  2.6  1.9 4948148 315232 ?      Sl   Dec18   1:39 /usr/share/antigravity/resources/app/extensions/antigravity/bin/language_server_linux_x64 --enable_lsp --extension_server_port 38677 --csrf_token 1e7871eb-c80f-4d76-8ba1-d88242354c53 --random_port --workspace_id file_home_takeru_git_EBM_on_Mars --cloud_code_endpoint https://daily-cloudcode-pa.sandbox.googleapis.com --app_data_dir antigravity --parent_pipe_path /tmp/server_12ef13b6c6e7daf0
+takeru    248287  0.0  0.0 231272  2748 pts/18   S+   00:50   0:00 grep --color=auto -i -E test|ebm

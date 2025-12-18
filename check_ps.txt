@@ -1,0 +1,1 @@
+takeru    248161  0.0  0.0 231272  2596 pts/18   S+   00:50   0:00 grep --color=auto -E test|ebm

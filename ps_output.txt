@@ -1,0 +1,387 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  35612 16156 ?        Ss   Dec11   0:13 /usr/lib/systemd/systemd --system --deserialize=80 rhgb
+root           2  0.0  0.0      0     0 ?        S    Dec11   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    Dec11   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/0:0H-events_highpri]
+root          13  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-mm_percpu_wq]
+root          15  0.0  0.0      0     0 ?        S    Dec11   0:05 [ksoftirqd/0]
+root          16  0.0  0.0      0     0 ?        I    Dec11   0:28 [rcu_preempt]
+root          17  0.0  0.0      0     0 ?        S    Dec11   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          18  0.0  0.0      0     0 ?        S    Dec11   0:00 [rcu_exp_gp_kthread_worker]
+root          19  0.0  0.0      0     0 ?        S    Dec11   0:01 [migration/0]
+root          20  0.0  0.0      0     0 ?        S    Dec11   0:00 [idle_inject/0]
+root          21  0.0  0.0      0     0 ?        S    Dec11   0:00 [cpuhp/0]
+root          22  0.0  0.0      0     0 ?        S    Dec11   0:00 [cpuhp/1]
+root          23  0.0  0.0      0     0 ?        S    Dec11   0:00 [idle_inject/1]
+root          24  0.0  0.0      0     0 ?        S    Dec11   0:01 [migration/1]
+root          25  0.0  0.0      0     0 ?        S    Dec11   0:03 [ksoftirqd/1]
+root          27  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/1:0H-events_highpri]
+root          28  0.0  0.0      0     0 ?        S    Dec11   0:00 [cpuhp/2]
+root          29  0.0  0.0      0     0 ?        S    Dec11   0:00 [idle_inject/2]
+root          30  0.0  0.0      0     0 ?        S    Dec11   0:01 [migration/2]
+root          31  0.0  0.0      0     0 ?        S    Dec11   0:02 [ksoftirqd/2]
+root          33  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/2:0H-events_highpri]
+root          34  0.0  0.0      0     0 ?        S    Dec11   0:00 [cpuhp/3]
+root          35  0.0  0.0      0     0 ?        S    Dec11   0:00 [idle_inject/3]
+root          36  0.0  0.0      0     0 ?        S    Dec11   0:00 [migration/3]
+root          37  0.0  0.0      0     0 ?        S    Dec11   0:02 [ksoftirqd/3]
+root          39  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/3:0H-events_highpri]
+root          40  0.0  0.0      0     0 ?        S    Dec11   0:00 [cpuhp/4]
+root          41  0.0  0.0      0     0 ?        S    Dec11   0:00 [idle_inject/4]
+root          42  0.0  0.0      0     0 ?        S    Dec11   0:01 [migration/4]
+root          43  0.0  0.0      0     0 ?        S    Dec11   0:43 [ksoftirqd/4]
+root          45  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/4:0H-events_highpri]
+root          46  0.0  0.0      0     0 ?        S    Dec11   0:00 [cpuhp/5]
+root          47  0.0  0.0      0     0 ?        S    Dec11   0:00 [idle_inject/5]
+root          48  0.0  0.0      0     0 ?        S    Dec11   0:01 [migration/5]
+root          49  0.0  0.0      0     0 ?        S    Dec11   0:00 [ksoftirqd/5]
+root          51  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/5:0H-events_highpri]
+root          52  0.0  0.0      0     0 ?        S    Dec11   0:00 [cpuhp/6]
+root          53  0.0  0.0      0     0 ?        S    Dec11   0:00 [idle_inject/6]
+root          54  0.0  0.0      0     0 ?        S    Dec11   0:00 [migration/6]
+root          55  0.0  0.0      0     0 ?        S    Dec11   0:00 [ksoftirqd/6]
+root          57  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/6:0H-events_highpri]
+root          58  0.0  0.0      0     0 ?        S    Dec11   0:00 [cpuhp/7]
+root          59  0.0  0.0      0     0 ?        S    Dec11   0:00 [idle_inject/7]
+root          60  0.0  0.0      0     0 ?        S    Dec11   0:00 [migration/7]
+root          61  0.0  0.0      0     0 ?        S    Dec11   0:05 [ksoftirqd/7]
+root          63  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/7:0H-events_highpri]
+root          64  0.0  0.0      0     0 ?        S    Dec11   0:00 [kdevtmpfs]
+root          65  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-inet_frag_wq]
+root          66  0.0  0.0      0     0 ?        I    Dec11   0:00 [rcu_tasks_kthread]
+root          67  0.0  0.0      0     0 ?        I    Dec11   0:00 [rcu_tasks_rude_kthread]
+root          68  0.0  0.0      0     0 ?        I    Dec11   0:00 [rcu_tasks_trace_kthread]
+root          69  0.0  0.0      0     0 ?        S    Dec11   0:00 [kauditd]
+root          70  0.0  0.0      0     0 ?        S    Dec11   0:00 [oom_reaper]
+root          72  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-writeback]
+root          73  0.0  0.0      0     0 ?        S    Dec11   1:12 [kcompactd0]
+root          74  0.0  0.0      0     0 ?        SN   Dec11   0:00 [ksmd]
+root          75  0.0  0.0      0     0 ?        SN   Dec11   0:00 [khugepaged]
+root          76  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-kblockd]
+root          77  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-blkcg_punt_bio]
+root          78  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-kintegrityd]
+root          80  0.0  0.0      0     0 ?        S    Dec11   0:00 [irq/9-acpi]
+root          83  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-tpm_dev_wq]
+root          84  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-ata_sff]
+root          85  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-md]
+root          86  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-md_bitmap]
+root          87  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-edac-poller]
+root          88  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-devfreq_wq]
+root          89  0.0  0.0      0     0 ?        S    Dec11   0:00 [watchdogd]
+root          91  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-quota_events_unbound]
+root          92  0.0  0.0      0     0 ?        I<   Dec11   0:09 [kworker/4:1H-i915_cleanup]
+root          94  0.0  0.0      0     0 ?        S    Dec11   1:23 [kswapd0]
+root          95  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-cryptd]
+root          98  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-kthrotld]
+root         100  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-acpi_thermal_pm]
+root         102  0.0  0.0      0     0 ?        S    Dec11   0:01 [hwrng]
+root         107  0.0  0.0      0     0 ?        S    Dec11   0:00 [scsi_eh_0]
+root         108  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-scsi_tmf_0]
+root         109  0.0  0.0      0     0 ?        S    Dec11   0:00 [scsi_eh_1]
+root         110  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-scsi_tmf_1]
+root         111  0.0  0.0      0     0 ?        S    Dec11   0:00 [scsi_eh_2]
+root         112  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-scsi_tmf_2]
+root         114  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-dm_bufio_cache]
+root         115  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-mld]
+root         116  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-ipv6_addrconf]
+root         117  0.0  0.0      0     0 ?        I<   Dec11   0:06 [kworker/1:1H-kblockd]
+root         119  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-kstrp]
+root         196  0.0  0.0      0     0 ?        I<   Dec11   0:09 [kworker/7:1H-kblockd]
+root         199  0.0  0.0      0     0 ?        I<   Dec11   0:05 [kworker/2:1H-i915_cleanup]
+root         200  0.0  0.0      0     0 ?        I<   Dec11   0:04 [kworker/3:1H-kblockd]
+root         244  0.0  0.0      0     0 ?        I<   Dec11   0:07 [kworker/0:1H-kblockd]
+root         247  0.0  0.0      0     0 ?        I<   Dec11   0:05 [kworker/5:1H-i915_cleanup]
+root         249  0.0  0.0      0     0 ?        I<   Dec11   0:08 [kworker/6:1H-i915_cleanup]
+root         327  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-kaluad]
+root         346  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-kmpath_rdacd]
+root         408  0.0  0.0      0     0 ?        S    Dec11   0:31 [irq/109-ELAN1300:00]
+root         423  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-worker]
+root         424  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-delalloc]
+root         425  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-flush_delalloc]
+root         426  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-cache]
+root         427  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-fixup]
+root         428  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-endio]
+root         429  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-endio-meta]
+root         430  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-rmw]
+root         431  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-endio-write]
+root         432  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-compressed-write]
+root         433  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-freespace-write]
+root         434  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-delayed-meta]
+root         435  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-btrfs-qgroup-rescan]
+root         436  0.0  0.0      0     0 ?        S    Dec11   0:00 [btrfs-cleaner]
+root         437  0.0  0.0      0     0 ?        S    Dec11   1:04 [btrfs-transaction]
+root         474  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-ttm]
+root         475  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-ttm]
+root         476  0.0  0.0      0     0 ?        S    Dec11   0:00 [card2-crtc0]
+root         477  0.0  0.0      0     0 ?        S    Dec11   0:00 [card2-crtc1]
+root         478  0.0  0.0      0     0 ?        S    Dec11   0:00 [card2-crtc2]
+root         547  0.0  0.1  68700 30592 ?        Ss   Dec11   0:03 /usr/lib/systemd/systemd-journald
+root         560  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-kmpathd]
+root         561  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-kmpath_handlerd]
+root         575  0.0  0.0  16576  6608 ?        Ss   Dec11   0:00 /usr/lib/systemd/systemd-userdbd
+root         587  0.0  0.0  40476 13256 ?        Ss   Dec11   0:01 /usr/lib/systemd/systemd-udevd
+root         590  0.0  0.0      0     0 ?        S    Dec11   0:00 [psimon]
+root         661  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-asus_wireless_workqueue]
+root         682  0.0  0.0      0     0 ?        S    Dec11   0:00 [jbd2/sda2-8]
+root         683  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-ext4-rsv-conversion]
+root         697  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-cfg80211]
+root         698  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-led_workqueue]
+root         707  0.0  0.0      0     0 ?        S    Dec11   0:14 [irq/136-iwlwifi]
+systemd+     726  0.0  0.0  17428  8136 ?        Ss   Dec11   2:12 /usr/lib/systemd/systemd-oomd
+systemd+     727  0.0  0.1  24432 16636 ?        Ss   Dec11   0:14 /usr/lib/systemd/systemd-resolved
+root         732  0.0  0.0  20988  3696 ?        S<sl Dec11   0:00 /usr/bin/auditd
+root         789  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-rpciod]
+root         790  0.0  0.0      0     0 ?        I<   Dec11   0:00 [kworker/R-xprtiod]
+dbus         791  0.0  0.0  13096  6880 ?        Ss   Dec11   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+dbus         794  0.0  0.0  14192 10136 ?        S    Dec11   0:11 dbus-broker --log 10 --controller 9 --machine-id 15e26ea859d346bc8c260c8e49a9a7ff --max-bytes 536870912 --max-fds 4096 --max-matches 131072 --audit
+avahi        796  0.0  0.0   6624  4756 ?        Ss   Dec11   0:01 avahi-daemon: running [sapphire.local]
+root         797  0.0  0.0   9356  5740 ?        Ss   Dec11   0:00 /usr/libexec/bluetooth/bluetoothd
+root         800  0.0  0.0 533972  7952 ?        Ssl  Dec11   0:00 /usr/libexec/iio-sensor-proxy
+root         803  0.0  0.0 303020  5980 ?        SLsl Dec11   0:00 /usr/libexec/low-memory-monitor
+root         805  0.0  0.0   3208  2124 ?        Ss   Dec11   0:00 /usr/sbin/mcelog --daemon --foreground
+polkitd      810  0.0  0.0 385108 13508 ?        Ssl  Dec11   0:15 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+rtkit        811  0.0  0.0  21724  3472 ?        SNsl Dec11   0:01 /usr/libexec/rtkit-daemon
+root         813  0.0  0.0  10060  5816 ?        Ss   Dec11   0:00 /usr/bin/smartd -n -q never --capabilities=mail
+root         814  0.0  0.0 534700  9264 ?        Ssl  Dec11   0:00 /usr/libexec/accounts-daemon
+root         815  0.0  0.0 531444  7220 ?        Ssl  Dec11   0:00 /usr/libexec/switcheroo-control
+root         817  0.0  0.0  17280  8504 ?        Ss   Dec11   0:02 /usr/lib/systemd/systemd-homed
+root         818  0.0  0.0  21136 12596 ?        Ss   Dec11   0:01 /usr/lib/systemd/systemd-logind
+root         822  0.0  0.0  17208  8136 ?        Ss   Dec11   0:02 /usr/lib/systemd/systemd-machined
+root         824  0.0  0.0 610644  9368 ?        Ssl  Dec11   0:24 /usr/bin/thermald --systemd --dbus-enable --adaptive
+root         830  0.0  0.0      0     0 ?        S    Dec11   0:00 [psimon]
+root         833  0.0  0.0 542972 12880 ?        Ssl  Dec11   0:11 /usr/libexec/udisks2/udisksd
+root         835  0.0  0.0 541884 11280 ?        Ssl  Dec11   0:22 /usr/libexec/upowerd
+chrony       850  0.0  0.0  86256  6564 ?        Ss   Dec11   0:00 /usr/sbin/chronyd -n -F 2
+root         855  0.0  0.0      0     0 ?        S    Dec11   0:00 [psimon]
+root         860  0.0  0.0 553756 14272 ?        Ssl  Dec11   0:00 /usr/sbin/abrtd -d -s
+avahi        870  0.0  0.0   6492  1612 ?        S    Dec11   0:00 avahi-daemon: chroot helper
+root         918  0.0  0.0 391348 13432 ?        Ssl  Dec11   0:00 /usr/bin/ModemManager
+root         921  0.0  0.2 601836 38096 ?        Ssl  Dec11   0:01 /usr/bin/python3 -sP /usr/bin/firewalld --nofork --nopid
+root         927  0.0  0.1 1127300 25520 ?       Ss   Dec11   0:00 /usr/bin/abrt-dump-journal-core -D -T -f -e
+root         929  0.0  0.1 1126664 24512 ?       Ss   Dec11   0:00 /usr/bin/abrt-dump-journal-oops -fxtD
+root         930  0.0  0.1 1126532 23152 ?       Ss   Dec11   0:00 /usr/bin/abrt-dump-journal-xorg -fxtD
+root        1006  0.0  0.1 560096 22756 ?        Ssl  Dec11   0:24 /usr/bin/NetworkManager --no-daemon
+root        1028  0.0  0.0  16764 10960 ?        Ss   Dec11   0:05 /usr/sbin/wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -u -s
+root        1047  0.0  0.0 282364  8248 ?        Ssl  Dec11   0:01 /usr/bin/gssproxy -i
+root        1051  0.0  0.1 499752 27980 ?        Ssl  Dec11   0:16 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
+colord      1060  0.0  0.0 538680 12268 ?        Ssl  Dec11   0:00 /usr/libexec/colord
+root        1075  0.0  0.1 498264 27872 ?        Ssl  Dec11   0:08 /usr/bin/python3 -Es /usr/sbin/tuned-ppd -l
+root        1087  0.0  0.0 609288 10540 ?        Ssl  Dec11   0:02 /usr/bin/gdm
+root        1121  0.0  0.0 306152  7540 ?        Ssl  Dec11   0:00 /usr/libexec/uresourced
+root        1238  0.0  0.0      0     0 ?        S<   Dec11   0:00 [krfcommd]
+root        1411  0.0  0.0 1944544 11704 ?       Ssl  Dec11   0:02 /usr/bin/pcscd --foreground --auto-exit
+root        2124  0.0  0.0 618988 14892 ?        Sl   Dec11   0:00 gdm-session-worker [pam/gdm-password]
+takeru      2371  0.0  0.0 252276 15996 ?        Ss   Dec11   0:11 /usr/lib/systemd/systemd --user --deserialize=9
+takeru      2373  0.0  0.0  16920  3080 ?        S    Dec11   0:00 (sd-pam)
+takeru      2391  0.0  0.0 407156  7940 ?        SLl  Dec11   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+takeru      2462  0.0  0.0 391656  6164 tty2     Ssl+ Dec11   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session
+takeru      2468  0.0  0.0   9204  4572 ?        Ss   Dec11   0:00 /usr/bin/dbus-broker-launch --scope user
+takeru      2491  0.0  0.0   9688  5744 ?        S    Dec11   0:07 dbus-broker --log 10 --controller 9 --machine-id 15e26ea859d346bc8c260c8e49a9a7ff --max-bytes 100000000000000 --max-fds 25000000000000 --max-matches 5000000000
+takeru      2494  0.0  0.0 163812  6108 tty2     Sl+  Dec11   0:00 /usr/libexec/gnome-session-init-worker gnome
+takeru      2564  0.0  0.0 311780  5536 ?        Ssl  Dec11   0:00 /usr/libexec/gnome-session-ctl --monitor
+takeru      2565  0.0  0.0 382072  9088 ?        Ssl  Dec11   0:03 /usr/libexec/uresourced --user
+takeru      2568  0.0  0.0 839316 11460 ?        Ssl  Dec11   0:00 /usr/libexec/gnome-session-service --session=gnome
+takeru      2572  0.0  0.0 539928  8852 ?        Ssl  Dec11   0:00 /usr/libexec/gvfsd
+takeru      2583  0.0  0.0 613612  6980 ?        Sl   Dec11   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+takeru      2594  0.0  0.0 398356 14160 ?        S<sl Dec11   5:28 /usr/bin/pipewire
+takeru      2595  0.0  0.1 941744 25632 ?        S<sl Dec11   0:09 /usr/bin/wireplumber
+takeru      2596  1.3  1.4 7570056 228356 ?      Ssl  Dec11 140:49 /usr/bin/gnome-shell
+takeru      2657  0.0  0.0 380892  7740 ?        Ssl  Dec11   0:00 /usr/libexec/at-spi-bus-launcher
+takeru      2663  0.0  0.0   8968  4220 ?        S    Dec11   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+takeru      2664  0.0  0.0   7256  3372 ?        S    Dec11   0:00 dbus-broker --log 10 --controller 9 --machine-id 15e26ea859d346bc8c260c8e49a9a7ff --max-bytes 100000000000000 --max-fds 6400000 --max-matches 5000000000
+takeru      2665  0.0  0.0 168404  7484 ?        Ssl  Dec11   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+takeru      2682  0.0  0.0 530828  6308 ?        Ssl  Dec11   0:00 /usr/libexec/xdg-permission-store
+takeru      2683  0.0  0.1 881464 22996 ?        Ssl  Dec11   0:00 /usr/libexec/gnome-shell-calendar-server
+takeru      2695  0.0  0.0 164400  6808 ?        Ssl  Dec11   0:00 /usr/libexec/dconf-service
+takeru      2696  0.0  0.2 1656348 44076 ?       Ssl  Dec11   0:01 /usr/libexec/evolution-source-registry
+takeru      2713  0.0  0.1 2917580 25128 ?       Ssl  Dec11   0:01 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+takeru      2748  0.0  0.0 612716 10136 ?        Ssl  Dec11   1:30 /usr/bin/ibus-daemon --panel disable
+takeru      2754  0.0  0.0 478808 10028 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-a11y-settings
+takeru      2791  0.0  0.0 314692  9372 ?        Sl   Dec11   0:00 /usr/libexec/gsd-disk-utility-notify
+takeru      2797  0.0  0.0 617316 10700 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-color
+takeru      2801  0.0  0.0 490372 13048 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-datetime
+takeru      2804  0.0  0.0 617196 11140 ?        Ssl  Dec11   0:04 /usr/libexec/gsd-housekeeping
+takeru      2818  0.0  0.0 606544  7132 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-keyboard
+takeru      2822  0.0  0.0 763376 12888 ?        Ssl  Dec11   0:01 /usr/libexec/gsd-media-keys
+takeru      2828  0.0  0.0 688416 11912 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-power
+takeru      2858  0.0  0.0 559376 14756 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-print-notifications
+takeru      2859  0.0  0.0 680416  7656 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-rfkill
+takeru      2864  0.0  0.0 393248  7068 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-screensaver-proxy
+takeru      2869  0.0  0.0 625636 11680 ?        Ssl  Dec11   0:08 /usr/libexec/gsd-sharing
+takeru      2872  0.0  0.0 616448 11352 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-smartcard
+takeru      2873  0.0  0.0 473336  9392 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-sound
+takeru      2875  0.0  0.0 690332  9984 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-usb-protection
+takeru      2877  0.0  0.0 617624 11232 ?        Ssl  Dec11   0:00 /usr/libexec/gsd-wwan
+takeru      2907  0.0  0.1 513016 19384 ?        Ssl  Dec11   0:00 /usr/bin/abrt-applet --gapplication-service
+takeru      2988  0.0  0.1 2984136 23292 ?       Ssl  Dec11   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+takeru      2990  0.0  0.0 622032 12736 ?        Ssl  Dec11   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+takeru      2991  0.0  0.1 426400 25660 ?        S<Lsl Dec11   6:57 /usr/bin/pipewire-pulse
+takeru      2998  0.0  0.2 976244 36740 ?        SLsl Dec11   0:01 /usr/libexec/goa-daemon
+takeru      3025  0.0  0.0 531408  6940 ?        Ssl  Dec11   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+takeru      3034  0.0  0.0 392724  7516 ?        Ssl  Dec11   0:08 /usr/libexec/gvfsd-metadata
+takeru      3037  0.0  0.0 533284  7668 ?        Ssl  Dec11   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+takeru      3054  0.0  0.0 693620 10008 ?        Ssl  Dec11   0:06 /usr/libexec/goa-identity-service
+takeru      3063  0.0  0.0 612512  8200 ?        Ssl  Dec11   0:02 /usr/libexec/gvfs-afc-volume-monitor
+takeru      3086  0.0  0.0 537768  8216 ?        Ssl  Dec11   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+takeru      3092  0.0  0.2 2024820 41916 ?       Ssl  Dec11   0:08 /usr/libexec/evolution-calendar-factory
+takeru      3099  0.0  0.0 531848  7344 ?        Ssl  Dec11   0:00 /usr/libexec/gvfs-goa-volume-monitor
+takeru      3116  0.0  0.3 545308 49596 ?        Sl   Dec11   3:24 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.WRDGH3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients -enable-ei-portal
+takeru      3172  0.0  0.1 985960 23932 ?        Ssl  Dec11   0:00 /usr/libexec/evolution-addressbook-factory
+root        3211  0.0  0.0 554300 13748 ?        Ssl  Dec11   0:00 /usr/sbin/abrt-dbus -t133
+takeru      3453  0.0  0.1 1387840 17944 ?       Ssl  Dec11   0:02 /usr/libexec/xdg-desktop-portal
+takeru      3596  0.0  0.0 632216 14212 ?        Sl   Dec11   0:00 /usr/libexec/gsd-printer
+takeru      3664  0.0  0.0 830928  8644 ?        Ssl  Dec11   0:00 /usr/libexec/xdg-document-portal
+root        3697  0.0  0.0   2588  1912 ?        Ss   Dec11   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+takeru      3759  0.0  0.0 475764 12332 ?        Ssl  Dec11   0:01 /usr/libexec/gsd-xsettings
+takeru      3765  0.0  0.1 1057964 29880 ?       Sl   Dec11   0:16 /usr/libexec/mutter-x11-frames
+takeru      4189  0.0  0.0 466468  6740 ?        Sl   Dec11   0:00 /usr/libexec/ibus-dconf
+takeru      4190  0.0  0.1 731808 24584 ?        Sl   Dec11   0:20 /usr/libexec/ibus-extension-gtk3
+takeru      4195  0.0  0.3 1611620 61376 ?       Ssl  Dec11   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+takeru      4196  0.1  1.4 3847352 239184 ?      Ssl  Dec11  12:12 /usr/bin/gnome-software --gapplication-service
+takeru      4198  0.0  0.5 2191088 93772 ?       Ssl  Dec11   0:04 /usr/libexec/xdg-desktop-portal-gnome
+takeru      4205  0.0  0.0 531920  7224 ?        Ssl  Dec11   0:00 /usr/libexec/ibus-portal
+takeru      4234  0.0  0.0 250320 10596 ?        Sl   Dec11   0:32 /usr/libexec/ibus-engine-mozc --ibus
+takeru      4246  0.0  0.2 268228 35384 ?        SLl  Dec11   0:20 /usr/libexec/mozc/mozc_server
+takeru      4282  0.0  0.1 723084 21748 ?        Ssl  Dec11   0:01 /usr/libexec/xdg-desktop-portal-gtk
+takeru      4364  1.5  6.7 10261008 1097052 ?    Sl   Dec11 163:08 /usr/lib64/firefox/firefox
+takeru      4477  0.0  0.0      0     0 ?        Z    Dec11   0:00 [bwrap] <defunct>
+takeru      4511  0.0  0.0      0     0 ?        Z    Dec11   0:00 [bwrap] <defunct>
+takeru      4599  0.0  0.0 1066256 2400 ?        Sl   Dec11   0:00 /usr/lib64/firefox/crashhelper 4364 13 /tmp/ 15
+takeru      4698  0.0  0.1 1343040 22628 ?       S    Dec11   0:03 /usr/lib64/firefox/firefox -contentproc -ipcHandle 0 -signalPipe 1 -initialChannelId {f793b15b-89e2-4439-b3ab-bd849a5dbfa3} -parentPid 4364 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 1 forkserver
+takeru      4749  0.0  0.2 1366936 35716 ?       Sl   Dec11   0:00 /usr/lib64/firefox/firefox -contentproc -parentBuildID 20251119102309 -prefsHandle 0:46528 -prefMapHandle 1:281504 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {3f6a1f3b-43d2-450d-88fb-1db4ee91017f} -parentPid 4364 -crashReporter 5 -crashHelper 6 -appDir /usr/lib64/firefox/browser 2 socket
+takeru      4770  0.1  2.7 25649380 441744 ?     Sl   Dec11  11:48 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46576 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {8674a978-b994-4806-a0eb-16f562b926c0} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 3 tab
+takeru      4781  1.2  0.3 1830192 57260 ?       Sl   Dec11 131:44 /usr/lib64/firefox/firefox -contentproc -parentBuildID 20251119102309 -prefsHandle 0:46576 -prefMapHandle 1:281504 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {f7e1b60f-6cae-4d2c-b0ee-4baa1443a93a} -parentPid 4364 -crashReporter 5 -crashHelper 6 -appDir /usr/lib64/firefox/browser 4 rdd
+takeru      4816  0.0  0.9 3951224 154340 ?      Sl   Dec11   1:04 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46663 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {4ab2f522-3865-489a-8eb1-d7f90c77f9b8} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 5 tab
+takeru      4885  0.0  4.2 4634320 688448 ?      Sl   Dec11   8:54 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:36790 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {f17a9eec-2070-4f96-8d20-d5cf4d4002db} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 6 tab
+takeru      4892  0.1  4.0 4743220 653552 ?      Sl   Dec11  11:14 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:36790 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {94a3c3ff-1192-4433-8c2b-59deda10e940} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 7 tab
+takeru      4907  0.0  2.7 4504624 441848 ?      Sl   Dec11   3:07 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:36790 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {19949a67-a81c-4e98-b207-85565255bb81} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 8 tab
+takeru      4923  0.0  2.8 4515572 464528 ?      Sl   Dec11   3:35 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:36790 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {9d2ca14c-f2a5-48f3-8cda-4e10fa70de94} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 9 tab
+takeru      5162  0.1  0.2 1490904 40664 ?       Sl   Dec11  16:28 /usr/lib64/firefox/firefox -contentproc -parentBuildID 20251119102309 -sandboxingKind 0 -prefsHandle 0:58242 -prefMapHandle 1:281504 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {09512e76-a9d7-4abb-a824-a1115d69dcd5} -parentPid 4364 -crashReporter 5 -crashHelper 6 -appDir /usr/lib64/firefox/browser 11 utility
+takeru      6650  0.0  0.1 812268 25692 ?        Sl   Dec11   0:01 /usr/bin/python3 /usr/share/ibus-typing-booster/engine/main.py --ibus
+takeru     13345  0.0  2.2 4443020 368916 ?      Sl   Dec11   3:48 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48799 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {853841c4-1a5c-4cda-be1a-ffd2549a77d7} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 80 tab
+passim     32679  0.0  0.0 546684 16060 ?        Ssl  Dec12   0:01 /usr/libexec/passimd
+takeru     33893  0.0  0.0   3748  2124 ?        S    Dec12   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --setenv XDG_RUNTIME_DIR /run/user/1000 --symlink /usr/lib /lib --symlink /usr/lib64 /lib64 --seccomp 50 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 48
+takeru     33894  0.0  0.0   3748  1232 ?        S    Dec12   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --setenv XDG_RUNTIME_DIR /run/user/1000 --symlink /usr/lib /lib --symlink /usr/lib64 /lib64 --seccomp 50 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 48
+takeru     33895  0.0  0.0 144132  2916 ?        Sl   Dec12   0:02 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 48
+takeru     39672  0.0  2.2 4202396 363976 ?      Sl   Dec12   1:12 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48864 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {5f1707d6-1d4e-40b1-91b5-c5da6ddf09c0} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 314 tab
+takeru     55613  0.1  3.6 4811208 598208 ?      Sl   Dec13  13:25 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48913 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {35fa5f51-d2d5-489e-830a-c8ece6fe0a68} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 535 tab
+takeru     56310  0.0  0.8 1960944 140932 ?      Ssl  Dec13   0:15 /usr/bin/nautilus --gapplication-service
+takeru     56314  0.0  0.0 761508  9916 ?        Sl   Dec13   0:00 /usr/libexec/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exec_spaw/0
+takeru     56343  0.0  0.0 541284 10152 ?        Sl   Dec13   0:00 /usr/libexec/gvfsd-recent --spawner :1.8 /org/gtk/gvfs/exec_spaw/1
+takeru     56344  0.0  0.0 614468  9200 ?        Sl   Dec13   0:00 /usr/libexec/gvfsd-network --spawner :1.8 /org/gtk/gvfs/exec_spaw/2
+takeru     56356  0.0  0.0 616536  9684 ?        Sl   Dec13   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.8 /org/gtk/gvfs/exec_spaw/3
+takeru     56374  0.0  0.0 613828  9208 ?        Sl   Dec13   0:01 /usr/libexec/gvfsd-wsdd --spawner :1.8 /org/gtk/gvfs/exec_spaw/4
+takeru     56379  0.0  0.0 266396 12004 ?        S    Dec13   0:01 /usr/bin/python3 /usr/bin/wsdd --no-host --discovery --listen /run/user/1000/gvfsd/wsdd
+takeru     65837  0.0  0.0 328592  6700 ?        Sl   Dec13   0:00 /usr/lib64/speech-dispatcher-modules//sd_espeak-ng /etc/speech-dispatcher/modules/espeak-ng.conf
+takeru     65840  0.0  0.0 328648  6680 ?        Sl   Dec13   0:00 /usr/lib64/speech-dispatcher-modules//sd_espeak-ng /etc/speech-dispatcher/modules/
+takeru     65848  0.0  0.0 159096  4532 ?        Sl   Dec13   0:04 /usr/lib64/speech-dispatcher-modules//sd_dummy /etc/speech-dispatcher/modules/
+takeru     65851  0.0  0.0 339832  2576 ?        Ssl  Dec13   0:00 /usr/bin/speech-dispatcher --spawn --communication-method unix_socket --socket-path /run/user/1000/speech-dispatcher/speechd.sock
+takeru     68956  0.0  0.5 1700760 88336 ?       Ssl  Dec14   4:46 /usr/bin/kgx --gapplication-service
+takeru     68964  0.0  0.0 233312  4432 pts/0    Ss+  Dec14   0:00 /bin/bash
+root       83649  0.0  0.0   4928  3308 ?        SNs  Dec17   0:00 /usr/sbin/alsactl -s -n 19 -c -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf --initfile=/lib/alsa/init/00main rdaemon
+root       83655  0.0  0.0   8936  6276 ?        Ss   Dec17   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       83672  0.0  0.0 252808 11512 ?        Ss   Dec17   0:00 /usr/bin/cupsd -l
+takeru     83734  0.0  0.1 1108976 23752 ?       SNsl Dec17   0:16 /usr/libexec/localsearch-3
+takeru     89700  0.1  3.0 4484644 487376 ?      Sl   Dec17   1:40 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48912 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {34d3a674-83d8-43a9-a089-4bde5de63d0f} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 738 tab
+root       96070  0.0  0.0      0     0 ?        S    Dec18   0:00 [irq/135-mei_me]
+sssd       96188  0.0  0.0 247608  7744 ?        Ss   Dec18   0:02 /usr/libexec/sssd/sssd_kcm --logger=files
+takeru    105975  0.0  0.0 550304 13236 ?        Sl   Dec18   0:00 /usr/libexec/gvfsd-http --spawner :1.8 /org/gtk/gvfs/exec_spaw/5
+root      106164  0.0  0.0      0     0 ?        I    Dec18   0:01 [kworker/5:3-events]
+root      121089  0.0  0.0      0     0 ?        S    Dec18   0:00 [psimon]
+takeru    123316  0.7  1.3 1461751532 219540 ?   SLl  Dec18   1:53 /usr/share/antigravity/antigravity
+takeru    123323  0.0  0.3 34059028 53264 ?      S    Dec18   0:00 /usr/share/antigravity/antigravity --type=zygote --no-zygote-sandbox
+takeru    123324  0.0  0.3 34059016 54136 ?      S    Dec18   0:00 /usr/share/antigravity/antigravity --type=zygote
+takeru    123326  0.0  0.0 34059044 9948 ?       S    Dec18   0:00 /usr/share/antigravity/antigravity --type=zygote
+takeru    123342  0.0  0.0 33567820 3796 ?       Sl   Dec18   0:00 /usr/share/antigravity/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/takeru/.config/Antigravity/Crashpad --annotation=_companyName=Google --annotation=_productName=Antigravity --annotation=_version=1.104.0 --annotation=lsb-release=Fedora Linux 43 (Workstation Edition) --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=37.3.1 --initial-client-fd=43 --shared-client-connection
+takeru    123360  2.0  0.8 34577720 141284 ?     Sl   Dec18   4:51 /usr/share/antigravity/antigravity --type=zygote --no-zygote-sandbox
+takeru    123369  0.0  0.4 34125340 78868 ?      Sl   Dec18   0:06 /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=123342 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7627610296933014768,4430740330092254659,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    123434  0.0  0.8 1476607828 135676 ?   Sl   Dec18   0:02 /usr/share/antigravity/antigravity --type=zygote
+takeru    123471  0.1  0.7 1461580780 122088 ?   Sl   Dec18   0:27 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=123342 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7627610296933014768,4430740330092254659,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    123485  0.0  0.7 1461544932 123208 ?   Sl   Dec18   0:06 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=123342 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7627610296933014768,4430740330092254659,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    123770  0.0  0.3 34178044 62368 ?      Sl   Dec18   0:00 /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=123342 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7627610296933014768,4430740330092254659,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    125374  0.0  0.0   3748  2360 ?        S    Dec18   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --setenv XDG_RUNTIME_DIR /run/user/1000 --symlink /usr/lib /lib --symlink /usr/lib64 /lib64 --seccomp 43 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 39
+takeru    125375  0.0  0.0   3748  1416 ?        S    Dec18   0:00 bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --setenv XDG_RUNTIME_DIR /run/user/1000 --symlink /usr/lib /lib --symlink /usr/lib64 /lib64 --seccomp 43 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 39
+takeru    125376  0.0  0.0 144136  4080 ?        Sl   Dec18   0:00 /usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 39
+root      125984  0.0  0.0      0     0 ?        I    Dec18   0:01 [kworker/7:1-events]
+takeru    128591  0.4  1.0 2499528 164424 ?      Sl   Dec18   1:00 /usr/bin/gnome-system-monitor
+root      140448  0.1  0.0      0     0 ?        I    Dec18   0:15 [kworker/4:1-i915-unordered]
+root      144739  0.0  0.0      0     0 ?        I    Dec18   0:01 [kworker/0:1-i915-unordered]
+takeru    148096  0.2  1.8 4102200 295840 ?      Sl   Dec18   0:25 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48913 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {4a66b3c8-c3e7-43af-a9c8-40a0b96f1ea9} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 1001 tab
+takeru    149953  1.6  3.2 4604716 533288 ?      Sl   Dec18   2:51 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48913 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {0ab6b98e-127d-4790-a962-943b44369051} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 1010 tab
+takeru    152089  3.5  1.8 1461768276 299040 ?   RLl  Dec18   6:10 /usr/share/antigravity/antigravity
+takeru    152094  0.0  0.3 34059028 58736 ?      S    Dec18   0:00 /usr/share/antigravity/antigravity --type=zygote --no-zygote-sandbox
+takeru    152095  0.0  0.3 34059016 58828 ?      S    Dec18   0:00 /usr/share/antigravity/antigravity --type=zygote
+takeru    152097  0.0  0.0 34059044 14380 ?      S    Dec18   0:00 /usr/share/antigravity/antigravity --type=zygote
+takeru    152122  0.0  0.0 33567820 4268 ?       Sl   Dec18   0:00 /usr/share/antigravity/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/takeru/.config/Antigravity/Crashpad --annotation=_companyName=Google --annotation=_productName=Antigravity --annotation=_version=1.104.0 --annotation=lsb-release=Fedora Linux 43 (Workstation Edition) --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=37.3.1 --initial-client-fd=44 --shared-client-connection
+takeru    152146  4.3  1.1 34684604 180236 ?     Sl   Dec18   7:41 /usr/share/antigravity/antigravity --type=zygote --no-zygote-sandbox
+takeru    152157  0.1  0.5 34150308 90416 ?      Sl   Dec18   0:14 /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=152122 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3984627396992652983,5406568964386060873,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    152173 31.2  5.1 1480205136 831172 ?   Rl   Dec18  54:49 /usr/share/antigravity/antigravity --type=zygote
+takeru    152210  0.0  0.9 1476599640 152716 ?   Sl   Dec18   0:06 /usr/share/antigravity/antigravity --type=zygote
+takeru    152282  0.1  0.9 1461545060 154852 ?   Sl   Dec18   0:11 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=152122 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3984627396992652983,5406568964386060873,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    152311  0.4  0.8 1461679260 135684 ?   Sl   Dec18   0:48 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=152122 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3984627396992652983,5406568964386060873,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    152621  0.0  0.0 233356  5816 pts/2    Ss+  Dec18   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    152717  0.0  0.4 34178172 70468 ?      Sl   Dec18   0:00 /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=152122 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3984627396992652983,5406568964386060873,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    176565  0.1  1.2 3995792 209204 ?      Sl   Dec18   0:08 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48912 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {cb8d8625-ea53-47b0-813a-df82c49083aa} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 1046 tab
+root      195903  0.0  0.0      0     0 ?        I<   Dec18   0:02 [kworker/u33:2-rb_allocator]
+root      196115  0.0  0.0      0     0 ?        I    Dec18   0:00 [kworker/3:2-events]
+root      212770  0.0  0.0      0     0 ?        I    Dec18   0:03 [kworker/u32:1-flush-btrfs-1]
+root      213050  0.1  0.0      0     0 ?        I    Dec18   0:06 [kworker/u32:8-btrfs-delalloc]
+takeru    213106  0.1  0.7 1461564468 125608 ?   Sl   Dec18   0:04 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=152122 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3984627396992652983,5406568964386060873,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    213123  2.1  1.7 1461566008 288008 ?   Sl   Dec18   1:21 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --crashpad-handler-pid=152122 --enable-crash-reporter=ea59d394-4d1d-4933-b8c7-89a82346ceb2,no_channel --user-data-dir=/home/takeru/.config/Antigravity --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3984627396992652983,5406568964386060873,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+takeru    213157  0.0  0.0      0     0 ?        Z    Dec18   0:00 [sh] <defunct>
+takeru    213306  0.0  0.0 233360  5612 pts/11   Ss+  Dec18   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    213314  2.5  2.1 4948148 342180 ?      Sl   Dec18   1:35 /usr/share/antigravity/resources/app/extensions/antigravity/bin/language_server_linux_x64 --enable_lsp --extension_server_port 38677 --csrf_token 1e7871eb-c80f-4d76-8ba1-d88242354c53 --random_port --workspace_id file_home_takeru_git_EBM_on_Mars --cloud_code_endpoint https://daily-cloudcode-pa.sandbox.googleapis.com --app_data_dir antigravity --parent_pipe_path /tmp/server_12ef13b6c6e7daf0
+takeru    213545  0.0  0.3 659624 53856 ?        Sl   Dec18   0:02 /home/takeru/.config/Antigravity/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd
+root      213995  0.0  0.0      0     0 ?        I    Dec18   0:00 [kworker/6:1-i915-unordered]
+takeru    215795  0.0  0.6 1459544256 99468 ?    Sl   Dec18   0:00 /usr/share/antigravity/antigravity /usr/share/antigravity/resources/app/extensions/markdown-language-features/dist/serverWorkerMain --node-ipc --clientProcessId=213123
+root      216975  0.0  0.0      0     0 ?        I    Dec18   0:00 [kworker/7:0-events]
+takeru    217088  0.3  1.1 1951572 184400 ?      Ssl  Dec18   0:11 /usr/bin/gnome-text-editor --gapplication-service
+root      217533  0.0  0.0      0     0 ?        I    Dec18   0:00 [kworker/u32:3-btrfs-endio-write]
+takeru    218257  0.0  0.0 233360  5764 pts/7    Ss+  Dec18   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    220362  0.0  0.0 233360  5764 pts/12   Ss+  00:00   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    220798  0.0  0.0 233360  5876 pts/13   Ss+  00:00   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+root      222824  0.0  0.0      0     0 ?        I    00:04   0:00 [kworker/0:2]
+takeru    223404  0.0  0.0 233360  5760 pts/14   Ss+  00:05   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    225121  0.0  0.0 233360  5752 pts/15   Ss+  00:08   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+root      227591  0.0  0.0      0     0 ?        I    00:13   0:00 [kworker/u32:0-btrfs-delalloc]
+root      227592  0.0  0.0      0     0 ?        I    00:13   0:00 [kworker/u32:2-i915]
+root      227593  0.0  0.0      0     0 ?        I    00:13   0:00 [kworker/u32:4-flush-btrfs-1]
+root      228313  0.0  0.0      0     0 ?        I    00:14   0:00 [kworker/4:0-events]
+root      230024  0.0  0.0      0     0 ?        I    00:18   0:00 [kworker/2:0-mm_percpu_wq]
+root      230265  0.0  0.0      0     0 ?        I    00:18   0:00 [kworker/1:1-mm_percpu_wq]
+root      231675  0.0  0.0      0     0 ?        I<   00:21   0:00 [kworker/u33:0-rb_allocator]
+takeru    231963  0.0  0.0 233360  5824 pts/16   Ss+  00:21   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    233037  0.0  0.0 233360  5924 pts/17   Ss+  00:23   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+root      236541  0.0  0.0      0     0 ?        I    00:30   0:00 [kworker/3:0-events]
+takeru    238922  0.0  0.0 233488  5824 pts/18   Ss   00:35   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    239218  0.0  0.0 233360  5752 pts/19   Ss+  00:35   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    239253  0.0  0.5 1459544192 90300 ?    Sl   00:35   0:00 /usr/share/antigravity/antigravity /usr/share/antigravity/resources/app/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=213123
+takeru    239261  0.1  0.7 277552 116348 ?       Sl   00:35   0:00 /home/takeru/.antigravity/extensions/meta.pyrefly-0.46.0-linux-x64/bin/pyrefly lsp
+root      241008  0.0  0.0      0     0 ?        I    00:39   0:00 [kworker/5:0-events]
+takeru    241134  0.0  0.0 233360  5880 pts/20   Ss+  00:39   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+root      241573  0.0  0.0      0     0 ?        I    00:40   0:00 [kworker/1:2]
+takeru    241735  0.0  0.0 233360  5792 pts/21   Ss+  00:40   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+root      242231  0.0  0.0      0     0 ?        I    00:41   0:00 [kworker/2:2-events]
+root      242337  0.0  0.0      0     0 ?        I    00:41   0:00 [kworker/6:0]
+takeru    242403  0.0  0.0 233360  5936 pts/22   Ss+  00:41   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    242621  0.0  0.0 233488  5756 pts/23   Ss+  00:41   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+takeru    244254  0.0  0.4 3724460 70800 ?       Sl   00:44   0:00 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48912 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {b34d251b-124a-48ca-89e6-0fdadb732e02} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 1136 tab
+root      244761  0.0  0.0      0     0 ?        I    00:45   0:00 [kworker/7:2-events]
+root      244885  0.1  0.0      0     0 ?        I<   00:45   0:00 [kworker/u33:1-i915_flip]
+takeru    245144  0.0  0.4 3724476 70768 ?       Sl   00:45   0:00 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48912 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {38422de5-d0e5-4f45-8a90-efb73c351e8c} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 1137 tab
+takeru    245561  0.0  0.0 233360  5764 pts/24   Ss+  00:46   0:00 /usr/bin/bash --init-file /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+root      245637  0.0  0.0      0     0 ?        I    00:46   0:00 [kworker/3:1-events]
+root      246022  0.0  0.0      0     0 ?        I    00:47   0:00 [kworker/2:1-events]
+root      246104  0.0  0.0      0     0 ?        I    00:47   0:00 [kworker/u32:5-btrfs-endio]
+root      246241  0.0  0.0  17192  7788 ?        S    00:47   0:00 systemd-userwork: waiting...
+root      246242  0.0  0.0  17196  7896 ?        S    00:47   0:00 systemd-userwork: waiting...
+root      246243  0.0  0.0  17196  7784 ?        S    00:47   0:00 systemd-userwork: waiting...
+takeru    246278  0.0  0.4 3724476 70548 ?       Sl   00:47   0:00 /usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:48912 -prefMapHandle 1:281504 -jsInitHandle 2:224660 -parentBuildID 20251119102309 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {af790f14-0f38-4b70-9697-5d16005d6682} -parentPid 4364 -crashReporter 6 -crashHelper 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 1138 tab
+root      246344  0.0  0.0      0     0 ?        I    00:47   0:00 [kworker/4:2]
+root      246638  0.0  0.0      0     0 ?        I    00:48   0:00 [kworker/u32:6-events_unbound]
+takeru    247688  0.0  0.0 234788  5048 pts/18   R+   00:49   0:00 ps aux
