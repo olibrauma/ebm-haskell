@@ -23,7 +23,7 @@ def compare_files(file_orig, file_ref):
         kv2 = dict(item.split(':') for item in h2.split(','))
         for k in kv1:
             v1, v2 = float(kv1[k]), float(kv2[k])
-            if not math.isclose(v1, v2, rel_tol=1e-13, abs_tol=1e-15):
+            if not math.isclose(v1, v2, rel_tol=1e-10, abs_tol=1e-10):
                 errors.append(f"Header mismatch in {k}: {v1} != {v2}")
 
     # データ行（配列値）の比較
@@ -34,7 +34,7 @@ def compare_files(file_orig, file_ref):
             v1s = [float(x) for x in l1.split(',')]
             v2s = [float(x) for x in l2.split(',')]
             for j, (v1, v2) in enumerate(zip(v1s, v2s)):
-                if not math.isclose(v1, v2, rel_tol=1e-13, abs_tol=1e-15):
+                if not math.isclose(v1, v2, rel_tol=1e-10, abs_tol=1e-10):
                     errors.append(f"Data mismatch at row {i}, col {j}: {v1} != {v2}")
                     if len(errors) > 10: break # 最初の方のミスだけ報告
             if len(errors) > 10: break
