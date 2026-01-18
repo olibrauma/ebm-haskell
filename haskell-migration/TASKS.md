@@ -30,16 +30,16 @@
   - [x] 単体テスト・検証
 
 ## Phase 3: シミュレーション制御
-- [ ] `Simulation.hs` 実装 <!-- id: 10 -->
-  - [ ] `equilibrium` 関数（平衡計算）
-  - [ ] `timeStep` 関数（1ステップ時間発展）
-  - [ ] 統合テスト
-- [ ] `IO.hs` 実装 <!-- id: 11 -->
-  - [ ] `dumpState` 関数
-  - [ ] `parseArgs` 関数
-- [ ] `Main.hs` 実装 <!-- id: 12 -->
-  - [ ] メインループ
-  - [ ] コマンドライン引数処理
+- [x] `Simulation.hs` 実装 <!-- id: 10 -->
+  - [x] `equilibrium` 関数（平衡計算）
+  - [x] `timeStep` 関数（1ステップ時間発展）
+  - [x] 統合テスト
+- [x] `IO.hs` 実装 <!-- id: 11 -->
+  - [x] `dumpState` 関数
+  - [x] `parseArgs` 関数
+- [x] `Main.hs` 実装 <!-- id: 12 -->
+  - [x] メインループ
+  - [x] コマンドライン引数処理
 
 ## Phase 4: 検証
 - [ ] 標準ケース検証 (P=0.007, Obl=25.19, Alpha=30) <!-- id: 13 -->
