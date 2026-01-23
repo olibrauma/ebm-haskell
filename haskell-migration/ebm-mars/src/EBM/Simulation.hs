@@ -8,7 +8,7 @@
 -- and time-stepping for the Mars climate model.
 module EBM.Simulation
   ( equilibrium,
-    timeStep,
+    stepClimate,
   )
 where
 
@@ -65,12 +65,13 @@ equilibrium config params initialState =
       if unTime (season state) >= targetSeason || bugFlag state /= 0.0
         then state
         else
-          let state' = timeStep config params state
-           in runOneYear config params state' targetSeason
+          -- Perform one time step
+          let newState = stepClimate config params state
+           in runOneYear config params newState targetSeason
 
 -- | Perform one time step
-timeStep :: SimulationConfig -> PlanetParams -> ClimateState -> ClimateState
-timeStep config params state =
+stepClimate :: SimulationConfig -> PlanetParams -> ClimateState -> ClimateState
+stepClimate config params state =
   let reso = resolution config
 
       -- Calculate global physics
@@ -124,7 +125,7 @@ timeStep config params state =
           difNega
 
       -- Update season
-      newSeason = season state2 + timeStep config
+      newSeason = season state2 + EBM.Types.timeStep config
    in state2
         { tempNorthSlope = newTPosi,
           massNorthSlope = newMPosi,

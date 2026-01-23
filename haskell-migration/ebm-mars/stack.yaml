@@ -1,4 +1,8 @@
-resolver: lts-21.25  # GHC 9.4.8
+resolver: lts-21.25
+
+extra-lib-dirs:
+- /home/takeru/git/EBM-on-Mars/haskell-migration/libs
+  # GHC 9.4.8
 
 packages:
   - .

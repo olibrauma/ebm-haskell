@@ -29,16 +29,17 @@ main = do
   let initialState = initializeState config params
 
   -- Run equilibrium calculation
-  hPutStrLn stderr "Calculating equilibrium state..."
-  let eqState = equilibrium config params initialState
+  hPutStrLn stderr "Skipping equilibrium state for debugging..."
+  -- let eqState = equilibrium config params initialState
+  let eqState = initialState
 
-  -- Dump initial state (after equilibrium)
+  -- Dump initial state
   dumpState outDir "dump_000.dat" eqState
 
   -- Run time evolution if no error
   if bugFlag eqState == 0.0
     then runTimeEvolution config params eqState outDir
-    else hPutStrLn stderr "Error: Bug flag set during equilibrium calculation"
+    else hPutStrLn stderr "Error: Bug flag set"
 
 -- | Parse command-line arguments
 parseCommandLine :: [String] -> (SimulationConfig, PlanetParams, FilePath)
@@ -75,7 +76,7 @@ runTimeEvolution config params initialState outDir =
           return ()
       | otherwise = do
           -- Perform one time step
-          let newState = timeStep config params state
+          let newState = stepClimate config params state
 
           -- Dump state
           let filename = printf "dump_%03d.dat" stepCount

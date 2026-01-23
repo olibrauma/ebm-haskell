@@ -1,0 +1,50 @@
+Version 3.3.1, Git revision 62d1bdf099c8c30634208f76cb4444f9896e4336 x86_64 hpack-0.37.0
+2026-01-18 17:00:42.837015: [debug] Checking for project config at: /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/stack.yaml
+2026-01-18 17:00:42.837456: [debug] Loading project config file stack.yaml
+2026-01-18 17:00:42.840770: [debug] Use of Casa server enabled: (CasaRepoPrefix "https://casa.stackage.org", 1280).
+2026-01-18 17:00:42.845096: [debug] (SQL) SELECT COUNT(*) FROM "last_performed" WHERE ("action"=?) AND ("timestamp">=?); [PersistInt64 1,PersistUTCTime 2026-01-17 08:00:42.845030391 UTC]
+2026-01-18 17:00:42.845963: [debug] Using package location completions from a lock file
+2026-01-18 17:00:42.849460: [debug] Loaded snapshot from Pantry database.
+2026-01-18 17:00:43.148059: [debug] Running Hpack on /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/package.yaml
+2026-01-18 17:00:43.151727: [warn] /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/ebm-mars.cabal was modified manually. Ignoring /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/package.yaml in favor of the Cabal file.
+If you want to use the package.yaml file instead of the Cabal file,
+then please delete the Cabal file.
+2026-01-18 17:00:43.152040: [debug] Prefetching git repos: []
+2026-01-18 17:00:43.152083: [debug] []
+2026-01-18 17:00:43.155161: [debug] Asking for a supported GHC version
+2026-01-18 17:00:43.155230: [debug] Getting hook installed compiler version
+2026-01-18 17:00:43.155377: [debug] Run process: /usr/bin/sh /home/takeru/.stack/hooks/ghc-install.sh
+2026-01-18 17:00:43.170294: [debug] Process finished in 15ms: /usr/bin/sh /home/takeru/.stack/hooks/ghc-install.sh
+2026-01-18 17:00:43.170408: [debug] Using GHC compiler at: /home/takeru/.ghcup/ghc/9.4.8/bin/ghc
+2026-01-18 17:00:43.170515: [debug] (SQL) SELECT "id","actual_version","arch","ghc_path","ghc_size","ghc_modified","ghc_pkg_path","runghc_path","haddock_path","cabal_version","global_db","global_db_cache_size","global_db_cache_modified","info","global_dump" FROM "compiler_cache" WHERE "ghc_path"=?; [PersistText "/home/takeru/.ghcup/ghc/9.4.8/bin/ghc"]
+2026-01-18 17:00:43.239927: [debug] Loaded compiler information from cache
+2026-01-18 17:00:43.240100: [debug] Asking for a supported GHC version
+2026-01-18 17:00:43.241095: [debug] Resolving package entries
+2026-01-18 17:00:43.241171: [debug] Parsing the targets
+2026-01-18 17:00:43.244735: [debug] Applying and checking flags
+2026-01-18 17:00:43.247620: [debug] SourceMap constructed
+2026-01-18 17:00:43.257611: [debug] Starting to execute command inside EnvConfig
+2026-01-18 17:00:43.261402: [debug] Finding out which packages are already installed
+2026-01-18 17:00:43.261596: [debug] Run process: /home/takeru/.ghcup/ghc/9.4.8/bin/ghc-pkg-9.4.8 --global --no-user-package-db dump --expand-pkgroot
+2026-01-18 17:00:43.333555: [debug] Process finished in 72ms: /home/takeru/.ghcup/ghc/9.4.8/bin/ghc-pkg-9.4.8 --global --no-user-package-db dump --expand-pkgroot
+2026-01-18 17:00:43.351389: [debug] Run process: /home/takeru/.ghcup/ghc/9.4.8/bin/ghc-pkg-9.4.8 --user --no-user-package-db --package-db /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/pkgdb dump --expand-pkgroot
+2026-01-18 17:00:43.386424: [debug] Process finished in 35ms: /home/takeru/.ghcup/ghc/9.4.8/bin/ghc-pkg-9.4.8 --user --no-user-package-db --package-db /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/pkgdb dump --expand-pkgroot
+2026-01-18 17:00:43.386662: [debug] Run process: /home/takeru/.ghcup/ghc/9.4.8/bin/ghc-pkg-9.4.8 --user --no-user-package-db --package-db /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/.stack-work/install/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/pkgdb dump --expand-pkgroot
+2026-01-18 17:00:43.427520: [debug] Process finished in 41ms: /home/takeru/.ghcup/ghc/9.4.8/bin/ghc-pkg-9.4.8 --user --no-user-package-db --package-db /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/.stack-work/install/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/pkgdb dump --expand-pkgroot
+2026-01-18 17:00:43.428146: [debug] Constructing the build plan
+2026-01-18 17:00:43.430011: [debug] Checking if we are going to build multiple executables with the same name
+2026-01-18 17:00:43.430124: [debug] Executing the build plan
+2026-01-18 17:00:43.431026: [debug] Run process within /tmp/stack-9f48d7e263926c62/: /home/takeru/.ghcup/ghc/9.4.8/bin/ghc -rtsopts -threaded -clear-package-db -global-package-db -hide-all-packages -package base -main-is StackSetupShim.mainOverride -package Cabal-3.8.1.0 /home/takeru/.stack/setup-exe-src/setup-w2MFVN35.hs /home/takeru/.stack/setup-exe-src/setup-shim-w2MFVN35.hs -o /home/takeru/.stack/setup-exe-cache/x86_64-linux/tmp-Cabal-simple_w2MFVN35_3.8.1.0_ghc-9.4.8
+[3 of 3] Linking /home/takeru/.stack/setup-exe-cache/x86_64-linux/tmp-Cabal-simple_w2MFVN35_3.8.1.0_ghc-9.4.8
+/usr/bin/ld: cannot find -lgmp: No such file or directory
+collect2: error: ld returned 1 exit status
+ghc-9.4.8: `gcc' failed in phase `Linker'. (Exit code: 1)
+2026-01-18 17:00:44.930541: [debug] Checking for project config at: /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/stack.yaml
+2026-01-18 17:00:44.930703: [debug] Loading project config file stack.yaml
+2026-01-18 17:00:44.932440: [debug] Use of Casa server enabled: (CasaRepoPrefix "https://casa.stackage.org", 1280).
+2026-01-18 17:00:44.936015: [debug] (SQL) SELECT COUNT(*) FROM "last_performed" WHERE ("action"=?) AND ("timestamp">=?); [PersistInt64 1,PersistUTCTime 2026-01-17 08:00:44.935976559 UTC]
+2026-01-18 17:00:44.936588: [error] 
+Error: [S-6374]
+       While building simple Setup.hs (scroll up to its section to see the error) using:
+       /home/takeru/.ghcup/ghc/9.4.8/bin/ghc -rtsopts -threaded -clear-package-db -global-package-db -hide-all-packages -package base -main-is StackSetupShim.mainOverride -package Cabal-3.8.1.0 /home/takeru/.stack/setup-exe-src/setup-w2MFVN35.hs /home/takeru/.stack/setup-exe-src/setup-shim-w2MFVN35.hs -o /home/takeru/.stack/setup-exe-cache/x86_64-linux/tmp-Cabal-simple_w2MFVN35_3.8.1.0_ghc-9.4.8
+       Process exited with code: ExitFailure 1 

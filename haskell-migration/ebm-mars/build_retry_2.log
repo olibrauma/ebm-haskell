@@ -1,8 +1,7 @@
-/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/ebm-mars.cabal was modified manually. Ignoring /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/package.yaml in favor of the Cabal file.
-If you want to use the package.yaml file instead of the Cabal file,
-then please delete the Cabal file.
 [3 of 3] Linking /home/takeru/.stack/setup-exe-cache/x86_64-linux/tmp-Cabal-simple_w2MFVN35_3.8.1.0_ghc-9.4.8
+/usr/bin/ld: skipping incompatible /home/takeru/git/EBM-on-Mars/haskell-migration/libs/libgmp.so when searching for -lgmp
 /usr/bin/ld: cannot find -lgmp: No such file or directory
+/usr/bin/ld: skipping incompatible /home/takeru/git/EBM-on-Mars/haskell-migration/libs/libgmp.so when searching for -lgmp
 collect2: error: ld returned 1 exit status
 ghc-9.4.8: `gcc' failed in phase `Linker'. (Exit code: 1)
 
