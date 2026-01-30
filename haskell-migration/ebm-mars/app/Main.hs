@@ -29,9 +29,10 @@ main = do
   let initialState = initializeState config params
 
   -- Run equilibrium calculation
-  hPutStrLn stderr "Skipping equilibrium state for debugging..."
-  -- let eqState = equilibrium config params initialState
-  let eqState = initialState
+  -- Run equilibrium calculation
+  -- hPutStrLn stderr "Skipping equilibrium state for debugging..."
+  let eqState = equilibrium config params initialState
+  -- let eqState = initialState
 
   -- Dump initial state
   dumpState outDir "dump_000.dat" eqState

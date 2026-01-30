@@ -1,0 +1,20 @@
+ebm-mars> build (lib + exe) with ghc-9.4.8
+Preprocessing library for ebm-mars-0.1.0.0..
+Building library for ebm-mars-0.1.0.0..
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/EBM/Atmosphere.hs:17:28: error:
+    Found ‘qualified’ in postpositive position. 
+    Suggested fix: Perhaps you intended to use ImportQualifiedPost
+   |
+17 | import Data.Vector.Unboxed qualified as V
+   |                            ^^^^^^^^^
+
+Error: [S-7282]
+       Stack failed to execute the build plan.
+       
+       While executing the build plan, Stack encountered the error:
+       
+       [S-7011]
+       While building package ebm-mars-0.1.0.0 (scroll up to its section to see the error) using:
+       /home/takeru/.stack/setup-exe-cache/x86_64-linux/Cabal-simple_w2MFVN35_3.8.1.0_ghc-9.4.8 --verbose=1 --builddir=.stack-work/dist/x86_64-linux/ghc-9.4.8 build lib:ebm-mars exe:ebm-mars-exe --ghc-options ""
+       Process exited with code: ExitFailure 1 

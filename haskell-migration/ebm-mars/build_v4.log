@@ -1,0 +1,324 @@
+[3 of 3] Linking /home/takeru/.stack/setup-exe-cache/x86_64-linux/tmp-Cabal-simple_w2MFVN35_3.8.1.0_ghc-9.4.8
+colour              > configure
+hashable            > configure
+integer-logarithms  > configure
+primitive           > configure
+transformers-compat > configure
+vector-stream       > configure
+colour              > Configuring colour-2.3.6...
+integer-logarithms  > Configuring integer-logarithms-1.0.3.1...
+hashable            > Configuring hashable-1.4.3.0...
+primitive           > Configuring primitive-0.8.0.0...
+vector-stream       > Configuring vector-stream-0.1.0.0...
+transformers-compat > Configuring transformers-compat-0.7.2...
+colour              > build with ghc-9.4.8
+vector-stream       > build with ghc-9.4.8
+integer-logarithms  > build with ghc-9.4.8
+hashable            > build with ghc-9.4.8
+transformers-compat > build with ghc-9.4.8
+vector-stream       > Preprocessing library for vector-stream-0.1.0.0..
+vector-stream       > Building library for vector-stream-0.1.0.0..
+primitive           > build with ghc-9.4.8
+colour              > Preprocessing library for colour-2.3.6..
+colour              > Building library for colour-2.3.6..
+integer-logarithms  > Preprocessing library for integer-logarithms-1.0.3.1..
+integer-logarithms  > Building library for integer-logarithms-1.0.3.1..
+transformers-compat > Preprocessing library for transformers-compat-0.7.2..
+transformers-compat > Building library for transformers-compat-0.7.2..
+hashable            > Preprocessing library for hashable-1.4.3.0..
+hashable            > Building library for hashable-1.4.3.0..
+primitive           > Preprocessing library for primitive-0.8.0.0..
+primitive           > Building library for primitive-0.8.0.0..
+colour              > [ 1 of 14] Compiling Data.Colour.CIE.Chromaticity
+vector-stream       > [1 of 1] Compiling Data.Stream.Monadic
+integer-logarithms  > [1 of 4] Compiling GHC.Integer.Logarithms.Compat
+hashable            > [1 of 7] Compiling Data.Hashable.Imports
+transformers-compat > [1 of 4] Compiling Control.Monad.Trans.Instances
+integer-logarithms  > [2 of 4] Compiling Math.NumberTheory.Logarithms
+hashable            > [2 of 7] Compiling Data.Hashable.LowLevel
+primitive           > [ 1 of 13] Compiling Control.Monad.Primitive
+colour              > [ 2 of 14] Compiling Data.Colour.CIE.Illuminant
+colour              > [ 3 of 14] Compiling Data.Colour.Chan
+hashable            > [3 of 7] Compiling Data.Hashable.Class
+colour              > [ 4 of 14] Compiling Data.Colour.Internal
+primitive           > [ 2 of 13] Compiling Data.Primitive.Array
+transformers-compat > [2 of 4] Compiling Data.Functor.Classes.Generic.Internal
+colour              > [ 5 of 14] Compiling Data.Colour.Matrix
+colour              > [ 6 of 14] Compiling Data.Colour.RGB
+integer-logarithms  > [3 of 4] Compiling Math.NumberTheory.Powers.Integer
+integer-logarithms  > [4 of 4] Compiling Math.NumberTheory.Powers.Natural
+colour              > [ 7 of 14] Compiling Data.Colour.RGBSpace.HSL
+integer-logarithms  > copy/register
+colour              > [ 8 of 14] Compiling Data.Colour.RGBSpace.HSV
+integer-logarithms  > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/integer-logarithms-1.0.3.1-JfoQIJXh5PhDnmGGlkJE4T
+colour              > [ 9 of 14] Compiling Data.Colour.SRGB.Linear
+colour              > [10 of 14] Compiling Data.Colour.RGBSpace
+integer-logarithms  > Registering library for integer-logarithms-1.0.3.1..
+colour              > [11 of 14] Compiling Data.Colour.SRGB
+colour              > [12 of 14] Compiling Data.Colour
+colour              > [13 of 14] Compiling Data.Colour.Names
+transformers-compat > [3 of 4] Compiling Data.Functor.Classes.Generic
+transformers-compat > [4 of 4] Compiling Paths_transformers_compat
+primitive           > [ 3 of 13] Compiling Data.Primitive.MVar
+primitive           > [ 4 of 13] Compiling Data.Primitive.MachDeps
+primitive           > [ 5 of 13] Compiling Data.Primitive.Internal.Operations
+primitive           > [ 6 of 13] Compiling Data.Primitive.MutVar
+primitive           > [ 7 of 13] Compiling Data.Primitive.SmallArray
+hashable            > [4 of 7] Compiling Data.Hashable.Lifted
+hashable            > [5 of 7] Compiling Data.Hashable.Generic.Instances
+hashable            > 
+hashable            > /tmp/stack-81ea26c9165e679e/hashable-1.4.3.0/src/Data/Hashable/Generic/Instances.hs:5:14: warning: [-Wtrustworthy-safe]
+hashable            >     ‘Data.Hashable.Generic.Instances’ is marked as Trustworthy but has been inferred as safe!
+hashable            >   |
+hashable            > 5 | {-# LANGUAGE Trustworthy #-}
+hashable            >   |              ^^^^^^^^^^^
+transformers-compat > copy/register
+transformers-compat > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/transformers-compat-0.7.2-KXodIWmk1jv2pOcMXMgqIg
+hashable            > [6 of 7] Compiling Data.Hashable.Generic
+hashable            > [7 of 7] Compiling Data.Hashable
+transformers-compat > Registering library for transformers-compat-0.7.2..
+hashable            > copy/register
+hashable            > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/hashable-1.4.3.0-GvGhQqvO1rP8x6Vr3H2mge
+colour              > [14 of 14] Compiling Data.Colour.CIE
+hashable            > Registering library for hashable-1.4.3.0..
+colour              > copy/register
+colour              > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/colour-2.3.6-5Hdg5NZuPkoIAWxSFkdA0e
+colour              > Registering library for colour-2.3.6..
+vector-stream       > copy/register
+vector-stream       > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/vector-stream-0.1.0.0-3lCfHZluihABooYlJXwfC1
+vector-stream       > Registering library for vector-stream-0.1.0.0..
+primitive           > [ 8 of 13] Compiling Data.Primitive.Types
+ansi-terminal-types > configure
+ansi-terminal-types > Configuring ansi-terminal-types-0.11.5...
+ansi-terminal-types > build with ghc-9.4.8
+ansi-terminal-types > Preprocessing library for ansi-terminal-types-0.11.5..
+ansi-terminal-types > Building library for ansi-terminal-types-0.11.5..
+ansi-terminal-types > [1 of 1] Compiling System.Console.ANSI.Types
+primitive           > [ 9 of 13] Compiling Data.Primitive.ByteArray
+primitive           > [10 of 13] Compiling Data.Primitive.PrimArray
+ansi-terminal-types > copy/register
+ansi-terminal-types > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/ansi-terminal-types-0.11.5-94tBGyEfSQUHisdUb8P9op
+ansi-terminal-types > Registering library for ansi-terminal-types-0.11.5..
+primitive           > [11 of 13] Compiling Data.Primitive.Ptr
+primitive           > [12 of 13] Compiling Data.Primitive
+primitive           > [13 of 13] Compiling Data.Primitive.PrimVar
+ansi-terminal       > configure
+primitive           > copy/register
+ansi-terminal       > Configuring ansi-terminal-0.11.5...
+primitive           > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/primitive-0.8.0.0-DOq08qccxJQDiY3mViZQFk
+ansi-terminal       > build with ghc-9.4.8
+primitive           > Registering library for primitive-0.8.0.0..
+ansi-terminal       > Preprocessing library for ansi-terminal-0.11.5..
+ansi-terminal       > Building library for ansi-terminal-0.11.5..
+ansi-terminal       > [1 of 3] Compiling System.Console.ANSI.Codes
+ansi-terminal       > [2 of 3] Compiling System.Console.ANSI.Unix
+ansi-terminal       > [3 of 3] Compiling System.Console.ANSI
+scientific          > configure
+ansi-terminal       > copy/register
+vector              > configure
+ansi-terminal       > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/ansi-terminal-0.11.5-JMxoKdV7josJdlg4lVjYL2
+ansi-terminal       > Registering library for ansi-terminal-0.11.5..
+scientific          > Configuring scientific-0.3.7.0...
+vector              > Configuring vector-0.13.1.0...
+scientific          > build with ghc-9.4.8
+vector              > build with ghc-9.4.8
+ansi-wl-pprint      > configure
+scientific          > Preprocessing library for scientific-0.3.7.0..
+scientific          > Building library for scientific-0.3.7.0..
+vector              > Preprocessing library for vector-0.13.1.0..
+vector              > Building library for vector-0.13.1.0..
+scientific          > [1 of 5] Compiling GHC.Integer.Compat
+scientific          > [2 of 5] Compiling Utils
+ansi-wl-pprint      > Configuring ansi-wl-pprint-0.6.9...
+scientific          > [3 of 5] Compiling Data.Scientific
+vector              > [ 1 of 21] Compiling Data.Vector.Fusion.Stream.Monadic
+vector              > [ 2 of 21] Compiling Data.Vector.Fusion.Util
+vector              > [ 3 of 21] Compiling Data.Vector.Fusion.Bundle.Size
+ansi-wl-pprint      > build with ghc-9.4.8
+ansi-wl-pprint      > Preprocessing library for ansi-wl-pprint-0.6.9..
+ansi-wl-pprint      > Building library for ansi-wl-pprint-0.6.9..
+ansi-wl-pprint      > [1 of 2] Compiling Text.PrettyPrint.ANSI.Leijen.Internal
+scientific          > 
+scientific          > /tmp/stack-81ea26c9165e679e/scientific-0.3.7.0/src/Data/Scientific.hs:1063:16: warning: [-Wincomplete-uni-patterns]
+scientific          >     Pattern match(es) are non-exhaustive
+scientific          >     In a pattern binding:
+scientific          >         Patterns of type ‘[Char]’ not matched:
+scientific          >             []
+scientific          >             []
+scientific          >             []
+scientific          >      |
+scientific          > 1063 |                (d:ds') = map intToDigit (if ei > 0 then init is' else is')
+scientific          >      |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scientific          > 
+scientific          > /tmp/stack-81ea26c9165e679e/scientific-0.3.7.0/src/Data/Scientific.hs:1079:11: warning: [-Wincomplete-uni-patterns]
+scientific          >     Pattern match(es) are non-exhaustive
+scientific          >     In a pattern binding: Patterns of type ‘[Char]’ not matched: []
+scientific          >      |
+scientific          > 1079 |           d:ds' = map intToDigit (if ei > 0 then is' else 0:is')
+scientific          >      |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+vector              > [ 4 of 21] Compiling Data.Vector.Generic.Mutable.Base
+vector              > [ 5 of 21] Compiling Data.Vector.Generic.Base
+vector              > [ 6 of 21] Compiling Data.Vector.Internal.Check
+ansi-wl-pprint      > 
+ansi-wl-pprint      > /tmp/stack-81ea26c9165e679e/ansi-wl-pprint-0.6.9/Text/PrettyPrint/ANSI/Leijen/Internal.hs:34:1: warning: [-Wunused-imports]
+ansi-wl-pprint      >     The import of ‘Data.Monoid’ is redundant
+ansi-wl-pprint      >       except perhaps to import instances from ‘Data.Monoid’
+ansi-wl-pprint      >     To import instances alone, use: import Data.Monoid()
+ansi-wl-pprint      >    |
+ansi-wl-pprint      > 34 | import Data.Monoid ((<>))
+ansi-wl-pprint      >    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+vector              > [ 7 of 21] Compiling Data.Vector.Fusion.Bundle.Monadic
+ansi-wl-pprint      > [2 of 2] Compiling Text.PrettyPrint.ANSI.Leijen
+ansi-wl-pprint      > 
+ansi-wl-pprint      > /tmp/stack-81ea26c9165e679e/ansi-wl-pprint-0.6.9/Text/PrettyPrint/ANSI/Leijen.hs:164:1: warning: [-Wunused-imports]
+ansi-wl-pprint      >     The import of ‘Data.Monoid’ is redundant
+ansi-wl-pprint      >       except perhaps to import instances from ‘Data.Monoid’
+ansi-wl-pprint      >     To import instances alone, use: import Data.Monoid()
+ansi-wl-pprint      >     |
+ansi-wl-pprint      > 164 | import Data.Monoid ((<>))
+ansi-wl-pprint      >     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+ansi-wl-pprint      > copy/register
+ansi-wl-pprint      > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/ansi-wl-pprint-0.6.9-670Bh3eifMJCwZDVKM5YT0
+ansi-wl-pprint      > Registering library for ansi-wl-pprint-0.6.9..
+optparse-applicative> configure
+scientific          > [4 of 5] Compiling Data.Text.Lazy.Builder.Scientific
+scientific          > 
+scientific          > /tmp/stack-81ea26c9165e679e/scientific-0.3.7.0/src/Data/Text/Lazy/Builder/Scientific.hs:20:1: warning: [-Wunused-imports]
+scientific          >     The import of ‘Data.Monoid’ is redundant
+scientific          >       except perhaps to import instances from ‘Data.Monoid’
+scientific          >     To import instances alone, use: import Data.Monoid()
+scientific          >    |
+scientific          > 20 | import Data.Monoid                  ((<>))
+scientific          >    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scientific          > 
+scientific          > /tmp/stack-81ea26c9165e679e/scientific-0.3.7.0/src/Data/Text/Lazy/Builder/Scientific.hs:67:12: warning: [-Wincomplete-uni-patterns]
+scientific          >     Pattern match(es) are non-exhaustive
+scientific          >     In a pattern binding:
+scientific          >         Patterns of type ‘[Char]’ not matched:
+scientific          >             []
+scientific          >             []
+scientific          >             []
+scientific          >    |
+scientific          > 67 |            (d:ds') = map i2d (if ei > 0 then init is' else is')
+scientific          >    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scientific          > 
+scientific          > /tmp/stack-81ea26c9165e679e/scientific-0.3.7.0/src/Data/Text/Lazy/Builder/Scientific.hs:95:11: warning: [-Wincomplete-uni-patterns]
+scientific          >     Pattern match(es) are non-exhaustive
+scientific          >     In a pattern binding: Patterns of type ‘[Char]’ not matched: []
+scientific          >    |
+scientific          > 95 |           d:ds' = map i2d (if ei > 0 then is' else 0:is')
+scientific          >    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+optparse-applicative> Configuring optparse-applicative-0.17.1.0...
+optparse-applicative> build with ghc-9.4.8
+optparse-applicative> Preprocessing library for optparse-applicative-0.17.1.0..
+optparse-applicative> Building library for optparse-applicative-0.17.1.0..
+optparse-applicative> [ 1 of 17] Compiling Options.Applicative.Help.Levenshtein
+optparse-applicative> [ 2 of 17] Compiling Options.Applicative.Help.Pretty
+optparse-applicative> [ 3 of 17] Compiling Options.Applicative.Help.Chunk
+optparse-applicative> [ 4 of 17] Compiling Options.Applicative.Help.Types
+optparse-applicative> [ 5 of 17] Compiling Options.Applicative.Types
+optparse-applicative> 
+optparse-applicative> /tmp/stack-81ea26c9165e679e/optparse-applicative-0.17.1.0/src/Options/Applicative/Types.hs:58:1: warning: [-Wdodgy-imports]
+optparse-applicative>     Module ‘Data.Semigroup’ does not export ‘Option’
+optparse-applicative>    |
+optparse-applicative> 58 | import Data.Semigroup hiding (Option)
+optparse-applicative>    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scientific          > [5 of 5] Compiling Data.ByteString.Builder.Scientific
+scientific          > 
+scientific          > /tmp/stack-81ea26c9165e679e/scientific-0.3.7.0/src/Data/ByteString/Builder/Scientific.hs:25:1: warning: [-Wunused-imports]
+scientific          >     The import of ‘Data.Monoid’ is redundant
+scientific          >       except perhaps to import instances from ‘Data.Monoid’
+scientific          >     To import instances alone, use: import Data.Monoid()
+scientific          >    |
+scientific          > 25 | import Data.Monoid                  ((<>))
+scientific          >    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scientific          > 
+scientific          > /tmp/stack-81ea26c9165e679e/scientific-0.3.7.0/src/Data/ByteString/Builder/Scientific.hs:75:12: warning: [-Wincomplete-uni-patterns]
+scientific          >     Pattern match(es) are non-exhaustive
+scientific          >     In a pattern binding:
+scientific          >         Patterns of type ‘[Char]’ not matched:
+scientific          >             []
+scientific          >             []
+scientific          >             []
+scientific          >    |
+scientific          > 75 |            (d:ds') = map i2d (if ei > 0 then init is' else is')
+scientific          >    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scientific          > 
+scientific          > /tmp/stack-81ea26c9165e679e/scientific-0.3.7.0/src/Data/ByteString/Builder/Scientific.hs:105:11: warning: [-Wincomplete-uni-patterns]
+scientific          >     Pattern match(es) are non-exhaustive
+scientific          >     In a pattern binding: Patterns of type ‘[Char]’ not matched: []
+scientific          >     |
+scientific          > 105 |           d:ds' = map i2d (if ei > 0 then is' else 0:is')
+scientific          >     |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scientific          > copy/register
+scientific          > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/scientific-0.3.7.0-19vKyxrwMwh8w5fBThW01
+scientific          > Registering library for scientific-0.3.7.0..
+optparse-applicative> [ 6 of 17] Compiling Options.Applicative.NonEmpty
+optparse-applicative> [ 7 of 17] Compiling Options.Applicative.Internal
+optparse-applicative> [ 8 of 17] Compiling Options.Applicative.Common
+optparse-applicative> [ 9 of 17] Compiling Options.Applicative.Help.Core
+optparse-applicative> [10 of 17] Compiling Options.Applicative.Help
+optparse-applicative> [11 of 17] Compiling Options.Applicative.Builder.Internal
+optparse-applicative> 
+optparse-applicative> /tmp/stack-81ea26c9165e679e/optparse-applicative-0.17.1.0/src/Options/Applicative/Builder/Internal.hs:29:1: warning: [-Wdodgy-imports]
+optparse-applicative>     Module ‘Data.Semigroup’ does not export ‘Option’
+optparse-applicative>    |
+optparse-applicative> 29 | import Data.Semigroup hiding (Option)
+optparse-applicative>    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+optparse-applicative> [12 of 17] Compiling Options.Applicative.Builder.Completer
+optparse-applicative> [13 of 17] Compiling Options.Applicative.Builder
+optparse-applicative> [14 of 17] Compiling Options.Applicative.BashCompletion
+optparse-applicative> 
+optparse-applicative> /tmp/stack-81ea26c9165e679e/optparse-applicative-0.17.1.0/src/Options/Applicative/BashCompletion.hs:17:1: warning: [-Wunused-imports]
+optparse-applicative>     The import of ‘Data.Foldable’ is redundant
+optparse-applicative>       except perhaps to import instances from ‘Data.Foldable’
+optparse-applicative>     To import instances alone, use: import Data.Foldable()
+optparse-applicative>    |
+optparse-applicative> 17 | import Data.Foldable ( asum )
+optparse-applicative>    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+optparse-applicative> [15 of 17] Compiling Options.Applicative.Extra
+optparse-applicative> [16 of 17] Compiling Options.Applicative
+optparse-applicative> [17 of 17] Compiling Options.Applicative.Arrows
+optparse-applicative> copy/register
+optparse-applicative> Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/optparse-applicative-0.17.1.0-LwyylSEDXj95yGKO77buVq
+optparse-applicative> Registering library for optparse-applicative-0.17.1.0..
+vector              > [ 8 of 21] Compiling Data.Vector.Fusion.Bundle
+vector              > [ 9 of 21] Compiling Data.Vector.Generic.Mutable
+vector              > [10 of 21] Compiling Data.Vector.Generic.New
+vector              > [11 of 21] Compiling Data.Vector.Generic
+vector              > [12 of 21] Compiling Data.Vector.Mutable
+vector              > [13 of 21] Compiling Data.Vector
+vector              > [14 of 21] Compiling Data.Vector.Primitive.Mutable
+vector              > [15 of 21] Compiling Data.Vector.Primitive
+vector              > [16 of 21] Compiling Data.Vector.Storable.Internal
+vector              > [17 of 21] Compiling Data.Vector.Storable.Mutable
+vector              > [18 of 21] Compiling Data.Vector.Storable
+vector              > [19 of 21] Compiling Data.Vector.Unboxed.Base
+vector              > [20 of 21] Compiling Data.Vector.Unboxed
+vector              > [21 of 21] Compiling Data.Vector.Unboxed.Mutable
+vector              > copy/register
+vector              > Installing library in /home/takeru/.stack/snapshots/x86_64-linux/adbb68db0091794eff7db37725d73be34e1dd483fcbaa424fe33903096ef0623/9.4.8/lib/x86_64-linux-ghc-9.4.8/vector-0.13.1.0-DaP9Gsy2yQ86blThQ6OwA6
+vector              > Registering library for vector-0.13.1.0..
+ebm-mars            > configure (lib + exe)
+Configuring ebm-mars-0.1.0.0...
+ebm-mars            > build (lib + exe) with ghc-9.4.8
+Preprocessing library for ebm-mars-0.1.0.0..
+Building library for ebm-mars-0.1.0.0..
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/EBM/Atmosphere.hs:17:28: error:
+    Found ‘qualified’ in postpositive position. 
+    Suggested fix: Perhaps you intended to use ImportQualifiedPost
+   |
+17 | import Data.Vector.Unboxed qualified as V
+   |                            ^^^^^^^^^
+Completed 13 action(s).
+
+Error: [S-7282]
+       Stack failed to execute the build plan.
+       
+       While executing the build plan, Stack encountered the error:
+       
+       [S-7011]
+       While building package ebm-mars-0.1.0.0 (scroll up to its section to see the error) using:
+       /home/takeru/.stack/setup-exe-cache/x86_64-linux/Cabal-simple_w2MFVN35_3.8.1.0_ghc-9.4.8 --verbose=1 --builddir=.stack-work/dist/x86_64-linux/ghc-9.4.8 build lib:ebm-mars exe:ebm-mars-exe --ghc-options ""
+       Process exited with code: ExitFailure 1 
