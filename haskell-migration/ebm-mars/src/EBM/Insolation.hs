@@ -65,7 +65,9 @@ calcDelta config params season =
       -- Solve Kepler's equation iteratively
       u = if ecc == 0.0
           then nt
-          else solveKepler ecc nt nt 0 100
+          else let x0 = nt
+                   x1 = x0 - (x0 - ecc * sin x0 - nt) / (1.0 - ecc * cos x0)
+               in solveKepler ecc nt x1 1 100
       
       r = ma * (1.0 - ecc * cos u)
       rAU = r / oneAU
@@ -93,6 +95,10 @@ calcDelta config params season =
           let xNew = x - (x - ecc * sin x - nt) / (1.0 - ecc * cos x)
           in solveKepler ecc nt xNew (loop + 1) loopMax
       | otherwise = x
+
+-- | Floating-point modulo (C fmod equivalent)
+fmod :: Double -> Double -> Double
+fmod x y = x - fromIntegral (floor (x / y)) * y
 
 -- | Calculate global insolation
 calcInsolation :: SimulationConfig -> PlanetParams -> ClimateState -> V.Vector Double
@@ -170,7 +176,3 @@ calcSlopeInsolation config params state alpha =
                           cos slopeFinal * cos (unAngle delta) * cos h)
                in if ins <= 0.0 then 0.0 else ins
           else 0.0
-  where
-    -- Floating-point modulo (C fmod equivalent)
-    fmod :: Double -> Double -> Double
-    fmod x y = x - fromIntegral (floor (x / y)) * y

@@ -70,14 +70,13 @@ verifyState golden test =
     
     checkVector :: String -> V.Vector Double -> V.Vector Double -> [(String, Double, Double)]
     checkVector name g t =
-      let diffs = V.zipWith (\gv tv -> 
+      let diffs = zipWith (\gv tv -> 
             let absDiff = abs (gv - tv)
                 relDiff = if gv /= 0.0 then abs ((gv - tv) / gv) else absDiff
-            in (absDiff, relDiff)) g t
-          failures = V.ifilter (\_ (a, r) -> a > tolerance && r > tolerance) diffs
-      in if V.null failures
-         then []
-         else V.toList $ V.imap (\i (a, r) -> (name ++ "[" ++ show i ++ "]", a, r)) failures
+            in (absDiff, relDiff)) (V.toList g) (V.toList t)
+          indexedDiffs = zip [(0::Int)..] diffs
+          failures = filter (\(_, (a, r)) -> a > tolerance && r > tolerance) indexedDiffs
+      in map (\(i, (a, r)) -> (name ++ "[" ++ show i ++ "]", a, r)) failures
 
 -- | Read dump file (C format)
 readDumpFile :: FilePath -> IO ClimateState
@@ -92,7 +91,12 @@ readDumpFile path = do
 parseHeader :: String -> (Int, Double, Double, Double, Double, Double)
 parseHeader line =
   let parts = map (drop 1 . dropWhile (/= ':')) $ words $ map (\c -> if c == ',' then ' ' else c) line
-      [loop, season, pAir, pIce, pRego, tSub] = map read parts
+      loop = read (parts !! 0)
+      season = read (parts !! 1)
+      pAir = read (parts !! 2)
+      pIce = read (parts !! 3)
+      pRego = read (parts !! 4)
+      tSub = read (parts !! 5)
   in (loop, season, pAir, pIce, pRego, tSub)
 
 -- | Parse data lines
@@ -110,9 +114,9 @@ parseDataLines lines =
   where
     parseLine :: String -> (Int, Double, Double, Double, Double, Double, Double)
     parseLine line =
-      let parts = map read $ words $ map (\c -> if c == ',' then ' ' else c) line
+      let parts = words $ map (\c -> if c == ',' then ' ' else c) line
       in case parts of
-           [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+           [i, t, m, tp, mp, tn, mn] -> (read i, read t, read m, read tp, read mp, read tn, read mn)
            _ -> error $ "Invalid data line: " ++ line
 
 -- | Construct state from parsed data

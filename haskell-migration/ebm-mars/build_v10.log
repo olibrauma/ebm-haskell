@@ -1,0 +1,145 @@
+ebm-mars> build (lib + exe) with ghc-9.4.8
+Preprocessing library for ebm-mars-0.1.0.0..
+Building library for ebm-mars-0.1.0.0..
+[ 4 of 11] Compiling EBM.IO
+[10 of 11] Compiling Verification
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:96:13: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: season
+      In the expression: (loop, season, pAir, pIce, pRego, tSub)
+      In the expression:
+        let
+          parts
+            = map (drop 1 . dropWhile (/= ':')) $ words $ map (\ c -> ...) line
+          [loop, season, pAir, pIce, pRego, tSub] = map read parts
+        in (loop, season, pAir, pIce, pRego, tSub)
+   |
+96 |   in (loop, season, pAir, pIce, pRego, tSub)
+   |             ^^^^^^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:96:21: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: pAir
+      In the expression: (loop, season, pAir, pIce, pRego, tSub)
+      In the expression:
+        let
+          parts
+            = map (drop 1 . dropWhile (/= ':')) $ words $ map (\ c -> ...) line
+          [loop, season, pAir, pIce, pRego, tSub] = map read parts
+        in (loop, season, pAir, pIce, pRego, tSub)
+   |
+96 |   in (loop, season, pAir, pIce, pRego, tSub)
+   |                     ^^^^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:96:27: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: pIce
+      In the expression: (loop, season, pAir, pIce, pRego, tSub)
+      In the expression:
+        let
+          parts
+            = map (drop 1 . dropWhile (/= ':')) $ words $ map (\ c -> ...) line
+          [loop, season, pAir, pIce, pRego, tSub] = map read parts
+        in (loop, season, pAir, pIce, pRego, tSub)
+   |
+96 |   in (loop, season, pAir, pIce, pRego, tSub)
+   |                           ^^^^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:96:33: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: pRego
+      In the expression: (loop, season, pAir, pIce, pRego, tSub)
+      In the expression:
+        let
+          parts
+            = map (drop 1 . dropWhile (/= ':')) $ words $ map (\ c -> ...) line
+          [loop, season, pAir, pIce, pRego, tSub] = map read parts
+        in (loop, season, pAir, pIce, pRego, tSub)
+   |
+96 |   in (loop, season, pAir, pIce, pRego, tSub)
+   |                                 ^^^^^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:96:40: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: tSub
+      In the expression: (loop, season, pAir, pIce, pRego, tSub)
+      In the expression:
+        let
+          parts
+            = map (drop 1 . dropWhile (/= ':')) $ words $ map (\ c -> ...) line
+          [loop, season, pAir, pIce, pRego, tSub] = map read parts
+        in (loop, season, pAir, pIce, pRego, tSub)
+   |
+96 |   in (loop, season, pAir, pIce, pRego, tSub)
+   |                                        ^^^^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:115:45: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: t
+      In the expression: (i, t, m, tp, mp, tn, mn)
+      In a case alternative:
+          [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |
+115 |            [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |                                             ^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:115:48: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: m
+      In the expression: (i, t, m, tp, mp, tn, mn)
+      In a case alternative:
+          [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |
+115 |            [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |                                                ^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:115:51: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: tp
+      In the expression: (i, t, m, tp, mp, tn, mn)
+      In a case alternative:
+          [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |
+115 |            [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |                                                   ^^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:115:55: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: mp
+      In the expression: (i, t, m, tp, mp, tn, mn)
+      In a case alternative:
+          [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |
+115 |            [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |                                                       ^^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:115:59: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: tn
+      In the expression: (i, t, m, tp, mp, tn, mn)
+      In a case alternative:
+          [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |
+115 |            [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |                                                           ^^
+
+/home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/Verification.hs:115:63: error:
+    • Couldn't match expected type ‘Double’ with actual type ‘Int’
+    • In the expression: mn
+      In the expression: (i, t, m, tp, mp, tn, mn)
+      In a case alternative:
+          [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |
+115 |            [i, t, m, tp, mp, tn, mn] -> (i, t, m, tp, mp, tn, mn)
+    |                                                               ^^
+
+Error: [S-7282]
+       Stack failed to execute the build plan.
+       
+       While executing the build plan, Stack encountered the error:
+       
+       [S-7011]
+       While building package ebm-mars-0.1.0.0 (scroll up to its section to see the error) using:
+       /home/takeru/.stack/setup-exe-cache/x86_64-linux/Cabal-simple_w2MFVN35_3.8.1.0_ghc-9.4.8 --verbose=1 --builddir=.stack-work/dist/x86_64-linux/ghc-9.4.8 build lib:ebm-mars exe:ebm-mars-exe --ghc-options ""
+       Process exited with code: ExitFailure 1 

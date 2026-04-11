@@ -14,7 +14,7 @@ module EBM.Atmosphere
   )
 where
 
-import Data.Vector.Unboxed qualified as V
+import qualified Data.Vector.Unboxed as V
 import EBM.Types
 
 -- | Diffusion coefficient [bar^-1]

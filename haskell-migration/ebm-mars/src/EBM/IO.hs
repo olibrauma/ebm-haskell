@@ -33,7 +33,7 @@ formatState state =
         (unPressure $ icePressure state)
         (unPressure $ regolithPressure state)
         (unTemperature $ sublimationTemp state)
-      dataLines = V.toList $ V.imap formatDataLine (temperatures state)
+      dataLines = zipWith formatDataLine [0..] (V.toList $ temperatures state)
   in header ++ concat dataLines
   where
     formatDataLine :: Int -> Double -> String

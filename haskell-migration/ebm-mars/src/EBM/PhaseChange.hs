@@ -130,7 +130,7 @@ calcSlopeTemperatureMass config params state slopeT slopeM ins radi dif =
       ai = albedoIce subParams
       
       -- Update temperature and mass for each latitude
-      V.unzip $ V.generate reso $ \n ->
+   in V.unzip $ V.generate reso $ \n ->
         let t = slopeT V.! n
             m = slopeM V.! n
             insN = ins V.! n

@@ -8,7 +8,7 @@
 -- Supports command-line arguments for pressure, obliquity, and slope angle.
 module Main (main) where
 
-import Data.Vector.Unboxed qualified as V
+import qualified Data.Vector.Unboxed as V
 import EBM.Config
 import EBM.IO
 import EBM.Insolation (calcYearLength)
@@ -32,14 +32,16 @@ main = do
   -- Run equilibrium calculation
   -- hPutStrLn stderr "Skipping equilibrium state for debugging..."
   let eqState = equilibrium config params initialState
-  -- let eqState = initialState
+  hPutStrLn stderr "Equilibrium state reached."
 
   -- Dump initial state
   dumpState outDir "dump_000.dat" eqState
 
   -- Run time evolution if no error
   if bugFlag eqState == 0.0
-    then runTimeEvolution config params eqState outDir
+    then do
+      hPutStrLn stderr "Starting time evolution..."
+      runTimeEvolution config params eqState outDir
     else hPutStrLn stderr "Error: Bug flag set"
 
 -- | Parse command-line arguments
@@ -83,11 +85,5 @@ runTimeEvolution config params initialState outDir =
           let filename = printf "dump_%03d.dat" stepCount
           dumpState outDir filename newState
 
-          -- Check if we've completed one year
-          let yearSec = unTime $ yearLength config
-              currentLoop = loopCount newState
-              targetSeason = yearSec * fromIntegral (currentLoop + 1)
-
-          if unTime (season newState) >= targetSeason
-            then return () -- Completed one year
-            else go newState (stepCount + 1)
+          -- Loop for next timestep
+          go newState (stepCount + 1)

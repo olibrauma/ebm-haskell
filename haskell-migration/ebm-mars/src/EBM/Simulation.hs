@@ -9,10 +9,11 @@
 module EBM.Simulation
   ( equilibrium,
     stepClimate,
+    runOneYear,
   )
 where
 
-import Data.Vector.Unboxed qualified as V
+import qualified Data.Vector.Unboxed as V
 import EBM.Atmosphere
 import EBM.Insolation
 import EBM.PhaseChange
@@ -59,15 +60,15 @@ equilibrium config params initialState =
                   else 0.0
            in go stateAfterYear temps tempsPosi tempsNega (loop + 1) converged
 
-    -- Run simulation for one Martian year
-    runOneYear :: SimulationConfig -> PlanetParams -> ClimateState -> Double -> ClimateState
-    runOneYear config params state targetSeason =
-      if unTime (season state) >= targetSeason || bugFlag state /= 0.0
-        then state
-        else
-          -- Perform one time step
-          let newState = stepClimate config params state
-           in runOneYear config params newState targetSeason
+-- | Run simulation for one Martian year
+runOneYear :: SimulationConfig -> PlanetParams -> ClimateState -> Double -> ClimateState
+runOneYear config params state targetSeason =
+  if unTime (season state) >= targetSeason || bugFlag state /= 0.0
+    then state
+    else
+      -- Perform one time step
+      let newState = stepClimate config params state
+       in newState `seq` runOneYear config params newState targetSeason
 
 -- | Perform one time step
 stepClimate :: SimulationConfig -> PlanetParams -> ClimateState -> ClimateState
