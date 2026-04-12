@@ -26,7 +26,7 @@ dumpState dir filename state = do
 -- | Format state as string (matching C output format)
 formatState :: ClimateState -> String
 formatState state =
-  let header = printf "loop:%d,season:%g,P_air:%g,P_ice:%g,P_rego:%g,T_sub:%g\n"
+  let header = printf "loop:%d,season:%.16g,P_air:%.16g,P_ice:%.16g,P_rego:%.16g,T_sub:%.16g\n"
         (loopCount state)
         (unTime $ season state)
         (unPressure $ airPressure state)

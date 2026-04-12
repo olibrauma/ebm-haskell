@@ -17,7 +17,7 @@
 /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/EBM/Config.hs:
   hash: 01789b1591880c48142df78331b7262388005f8245fdbdd5f36308fdab6eac40
 /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/EBM/IO.hs:
-  hash: 171a078bedefb6fc1b4ec2d835730bf02293d78b4e505834d0c1fd5386265ad4
+  hash: 821612628dbba345298ba828725b3bc2a13fdf2ed643db0d511fe83b22a4bfd9
 /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/EBM/Insolation.hs:
   hash: cc2b4a911b037093373e74e4246a9a6aac31211bc75ef2cdb0b3a956749b898b
 /home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/src/EBM/PhaseChange.hs:

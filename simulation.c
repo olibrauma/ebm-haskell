@@ -9,8 +9,8 @@ void dump_state(const char *dir, const char *filename, int loop, double season,
   FILE *f = fopen(path, "w");
   if (!f)
     return;
-  fprintf(f, "loop:%d,season:%g,P_air:%g,P_ice:%g,P_rego:%g,T_sub:%g\n", loop,
-          season, P_air, P_ice, P_rego, T_sub);
+  fprintf(f, "loop:%d,season:%.16g,P_air:%.16g,P_ice:%.16g,P_rego:%.16g,T_sub:%.16g\n",
+          loop, season, P_air, P_ice, P_rego, T_sub);
   for (int i = 0; i < 181; i++) {
     fprintf(f, "%d,%.16g,%.16g,%.16g,%.16g,%.16g,%.16g\n", i, T[i], M[i],
             T_posi[i], M_posi[i], T_nega[i], M_nega[i]);
