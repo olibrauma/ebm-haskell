@@ -1,0 +1,10 @@
+resolver: lts-21.25
+
+extra-lib-dirs:
+- /home/takeru/git/EBM-on-Mars/ebm-haskell/libs
+  # GHC 9.4.8
+
+packages:
+  - .
+
+extra-deps: []

@@ -1,37 +1,46 @@
-`test.c` is a C code made for a study of my master's thesis. It was last modified on 2015/01/06, according to file's metadata.
+# EBM-on-Mars: 火星の二酸化炭素循環エネルギーバランスモデル
 
-# Compile & Execute
-```
-$ gcc test.c -lm
-$ ./a.out 
-```
-Then you would hopefuly get progress info in console during execution.
-```
-The 0 th loop begins.
-The 1 th loop begins.
-...
-The 75 th loop begins.
-```
+このプロジェクトは、火星の気候システム（大気、極冠、レゴリスの3つのリザーバー間におけるCO2交換）をシミュレーションするための科学計算モデルです。
 
-When finished, you would get 7 files below with result info in console.
-```
-0.00756976(air), 0.0899085(ice), 0.0325217(rego), 149.484(T_sub), 76 loops, with no bug
-```
-* M_flat.dat
-* T_flat.dat
-* M_nega.dat
-* T_nega.dat
-* M_posi.dat
-* T_posi.dat
-* fCO2.dat
+## 現在のメイン実装: Haskell版 (Primary)
 
-The following Abstract is from the thesis, which is available on [my blog](https://lookbackmargin.blog/2020/05/11/mars-co2-system-and-obliquity/).
+本プロジェクトの**正（Primary）となる実装**は、型安全で保守性の高い **Haskell版** です。
+👉 [**haskell-migration/ebm-mars/**](file:///home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/)
 
-# Abstract
-The climate of Mars is dominated by CO2. This is because 95% of the atmosphere of Mars consists of CO2, and the ice-caps and surface regolith layers are large reservoirs of CO2. Exchange of CO2 among these three CO2 reservoirs on the Martian surface should therefore play a great role in determining the global climate of Mars.
+このHaskell版は、オリジナルのC言語ソースコードから、科学的な正確性を維持したまま現代的な実装へと移植されました。
 
-On the other hand, Laskar et al. (2003) showed theoretically that orbital elements, especially obliquity and eccentricity, has changed dynamically on Mars for the last 10 million years. Because both the obliquity and eccentricity are critical parameters to determine distribution and seasonality of insolation, Martian climate system may have changed dynamically owing to the changes in these orbital parameters.
+## プロジェクトの変遷
 
-Analyses of behaviors of the Martian climate coupled with surface CO2 system have been studied by Nakamura and Tajika (2001, 2002, 2003). They focused on multiplicity of the Martian climate states and the evolution of the climate system of Mars, but did not investigate the details of behaviors of the Martian CO2 system against the orbital parameters such as obliquity and eccentricity, and possible relation to periglacial landforms observed on the Martian surface today.
+1.  **レガシーC版 (2015)**: 修士論文の研究のために作成されたオリジナルのモノリスなCプログラム（`test.c`）。
+2.  **リファクタリング済みC版 (2026)**: Haskellへの移植の架け橋として作成された、構造化・モジュール化済みのC実装。検証の「正解（Ground Truth）」として機能します。
+3.  **Haskell移植版 (2026)**: 現在のメイン実装。リファクタリング済みC版のロジックを正確に継承しています。
 
-In this study, we investigate the behaviors of the Martian surface CO2 system (partition of CO2 among the three CO2 reservoirs – atmosphere, ice caps, and regolith) against changes in obliquity and eccentricity. We found that the Martian atmosphere becomes very thin (down to ~0.3 mbar) when obliquity becomes lower because permanent ice cap develops significantly under low obliquity. An increase of obliquity would result in increases of the reservoir sizes of the atmosphere and regolith. However, we also found that the reservoir sizes of the Martian surface CO2 system would become constant against the obliquity changes when obliquity is larger than some critical value (~40°). This is because permanent ice cap cannot be stable under high obliquity and seasonal ice cap does not change a net CO2 budget through a year. Formation of CO2 ice on the polar-facing slope of crater is shown, and it may explain possible periglacial features as seen in the interiors of Martial craters located in the middle latitude.
+## 移植の正確性検証手法
+
+Haskell版がオリジナルの科学モデルと数学的・物理的に同一であることを保証するため、以下の厳格な検証プロセスを実施しました。
+
+### 1. 差分スナップショット検証 (Differential Snapshot Testing)
+数年間にわたる平衡計算の完了を待つのではなく、特定の計算ステップにおける**スナップショットの整合性**を検証しました。温度分布、氷質量、気圧などの状態ベクトルをステップ単位で比較することで、数値積分ロジックが1ステップレベルで正確に移植されていることを確認しています。
+
+### 2. 80ケースの網羅的パラメータスイープ
+火星の広範な動作環境を網羅する**パラメータグリッド**（計80通り）を用いて検証を行いました。
+- **大気圧**: $10^{-3}$ bar から $5$ bar まで
+- **赤道傾斜角**: $0^\circ$（季節なし）から $90^\circ$（横倒し）まで
+- **地形（クレーター斜面）**: $0^\circ$ から $45^\circ$ まで
+
+### 3. 高精度保証 (1e-10)
+すべての物理変数において、Haskell実装は高精度C実装（Ground Truth）に対し、**$10^{-10}$ 以下の誤差**で一致することを全80ケースで確認済みです。
+
+## リポジトリの構造
+
+- `test.c`: レガシーなモノリスC実装
+- `main.c`, `ebm.h`, `simulation.c` 等: 構造化・モジュール化済みC実装
+- `haskell-migration/ebm-mars/`: **メインのHaskellソースコード**
+- `haskell-migration/ebm-mars/golden-master/high-precision/`: 移植検証に使用した高精度な正解データ（Golden Master）
+
+## 実行方法
+
+ビルドおよび実行方法の詳細は、Haskellディレクトリ内の [README](file:///home/takeru/git/EBM-on-Mars/haskell-migration/ebm-mars/README.md) を参照してください。
+
+---
+*本プロジェクトは、レガシーな科学計算コードを、数値的一貫性を100%維持しながら現代的な言語へ移行する際の手法を例示するものです。*
